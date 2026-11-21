@@ -1,0 +1,66 @@
+{
+  "scenario1": {
+    "searchCategory": "Samsung Mobile",
+    "brand": "Samsung",
+    "minPrice": 10000,
+    "maxPrice": 30000,
+    "officialStore": true,
+    "rating": "4",
+    "sortOption": "rating",
+    "storeCount": 5,
+    "pageCount": 3
+  },
+  "scenario2": {
+    "searchQuery": "Wireless Headphones",
+    "productsToCompare": 3
+  },
+  "scenario3": {
+    "searchQuery": "Smart Watch",
+    "startQuantity": 1,
+    "stepQuantities": [
+      2,
+      3
+    ],
+    "endQuantity": 1
+  },
+  "scenario4": {
+    "products": [
+      "Mobile Phone",
+      "Headphones",
+      "Power Bank"
+    ],
+    "mobileQty": 2,
+    "removeProduct": "Headphones"
+  },
+  "scenario5": {
+    "product": "Power Bank",
+    "guestEmail": "test.guest.jumia@gmail.com"
+  },
+  "scenario7": {
+    "products": [
+      "Shoes",
+      "Watch",
+      "Perfume"
+    ]
+  },
+  "scenario8": {
+    "searchQuery": "Laptop",
+    "pages": [
+      1,
+      2,
+      3
+    ]
+  },
+  "budgetConstraint": {
+    "targetBudget": 13000.0,
+    "budgetTolerance": 0.05,
+    "minBudget": 12350.0,
+    "maxProducts": 4,
+    "searchCategories": [
+      "Mobile Phone",
+      "Earphones",
+      "Smart Watch",
+      "Power Bank"
+    ]
+  }
+}

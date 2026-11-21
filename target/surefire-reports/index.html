@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-JumiaEgyptAutomationSuite" class="navigator-link">
+              <span class="suite-name border-failed">JumiaEgyptAutomationSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-JumiaEgyptAutomationSuite" class="navigator-link ">
+                    <span>C:\Users\artif\Downloads\Autokit-master\run.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-JumiaEgyptAutomationSuite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-JumiaEgyptAutomationSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-JumiaEgyptAutomationSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-JumiaEgyptAutomationSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-JumiaEgyptAutomationSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-JumiaEgyptAutomationSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">14 methods, 4 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-JumiaEgyptAutomationSuite" class="hide-methods failed suite-JumiaEgyptAutomationSuite"> (hide)</a> <!-- hide-methods failed suite-JumiaEgyptAutomationSuite -->
+                      <a href="#" panel-name="suite-JumiaEgyptAutomationSuite" class="show-methods failed suite-JumiaEgyptAutomationSuite"> (show)</a> <!-- show-methods failed suite-JumiaEgyptAutomationSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-JumiaEgyptAutomationSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JumiaEgyptAutomationSuite" title="tests.BudgetCartConstraintTest" class="method navigator-link" hash-for-method="testBudgetCartConstraint(13000.0, 0.05, 12350.0, 4)">testBudgetCartConstraint(13000.0, 0.05, 12350.0, 4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JumiaEgyptAutomationSuite" title="tests.Scenario3_CartQuantityPriceTest" class="method navigator-link" hash-for-method="testCartQuantityAndPriceCalculation(Smart Watch, 1, 2, 3, 1)">testCartQuantityAndPriceCalculation(Smart Watch, 1, 2, 3, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JumiaEgyptAutomationSuite" title="tests.Scenario4_MixedCartOperationsTest" class="method navigator-link" hash-for-method="testMixedCartOperations([Mobile Phone, Headphones, Power Bank], 2, Headphones)">testMixedCartOperations([Mobile Phone, Headphones, Power Bank], 2, Headphones)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JumiaEgyptAutomationSuite" title="tests.Scenario2_ProductComparisonCartTest" class="method navigator-link" hash-for-method="testProductComparisonThroughCart(Wireless Headphones, 3)">testProductComparisonThroughCart(Wireless Headphones, 3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-JumiaEgyptAutomationSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-JumiaEgyptAutomationSuite" class="hide-methods passed suite-JumiaEgyptAutomationSuite"> (hide)</a> <!-- hide-methods passed suite-JumiaEgyptAutomationSuite -->
+                      <a href="#" panel-name="suite-JumiaEgyptAutomationSuite" class="show-methods passed suite-JumiaEgyptAutomationSuite"> (show)</a> <!-- show-methods passed suite-JumiaEgyptAutomationSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-JumiaEgyptAutomationSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JumiaEgyptAutomationSuite" title="tests.Scenario1_SearchFilterSortTest" class="method navigator-link" hash-for-method="testAdvancedProductSearchFilterAndSort(Samsung Mobile, Samsung, 10000.0, 30000.0, true, 4, rating, 5, 3)">testAdvancedProductSearchFilterAndSort(Samsung Mobile, Samsung, 10000.0, 30000.0, true, 4, rating, 5, 3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JumiaEgyptAutomationSuite" title="tests.Scenario5_GuestCheckoutTest" class="method navigator-link" hash-for-method="testGuestCheckoutValidation(Power Bank, test.guest.jumia@gmail.com)">testGuestCheckoutValidation(Power Bank, test.guest.jumia@gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JumiaEgyptAutomationSuite" title="tests.Scenario7_WishlistGuestTest" class="method navigator-link" hash-for-method="testGuestWishlistValidation([Shoes, Watch])">testGuestWishlistValidation([Shoes, Watch])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JumiaEgyptAutomationSuite" title="tests.Scenario8_PaginationConsistencyTest" class="method navigator-link" hash-for-method="testPaginationAndProductConsistency(Laptop, [1, 2, 3])">testPaginationAndProductConsistency(Laptop, [1, 2, 3])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JumiaEgyptAutomationSuite" title="tests.Scenario6_SearchInputsTest" class="method navigator-link" hash-for-method="testSearchFunctionalityInputs(Valid, Samsung, ResultsFound)">testSearchFunctionalityInputs(Valid, Samsung, ResultsFound)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JumiaEgyptAutomationSuite" title="tests.Scenario6_SearchInputsTest" class="method navigator-link" hash-for-method="testSearchFunctionalityInputs(Numbers, 12345678, NoCrash)">testSearchFunctionalityInputs(Numbers, 12345678, NoCrash)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JumiaEgyptAutomationSuite" title="tests.Scenario6_SearchInputsTest" class="method navigator-link" hash-for-method="testSearchFunctionalityInputs(SpecialChar, @#$%^&amp;*, NoCrash)">testSearchFunctionalityInputs(SpecialChar, @#$%^&*, NoCrash)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JumiaEgyptAutomationSuite" title="tests.Scenario6_SearchInputsTest" class="method navigator-link" hash-for-method="testSearchFunctionalityInputs(Arabic, سامسونج, ResultsFound)">testSearchFunctionalityInputs(Arabic, سامسونج, ResultsFound)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JumiaEgyptAutomationSuite" title="tests.Scenario6_SearchInputsTest" class="method navigator-link" hash-for-method="testSearchFunctionalityInputs(Mixed, Samsung 2026 هاتف, Processed)">testSearchFunctionalityInputs(Mixed, Samsung 2026 هاتف, Processed)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-JumiaEgyptAutomationSuite" title="tests.Scenario6_SearchInputsTest" class="method navigator-link" hash-for-method="testSearchFunctionalityInputs(Partial, Sam, ResultsFound)">testSearchFunctionalityInputs(Partial, Sam, ResultsFound)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-JumiaEgyptAutomationSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-JumiaEgyptAutomationSuite" class="panel JumiaEgyptAutomationSuite">
+          <div class="suite-JumiaEgyptAutomationSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.Scenario3_CartQuantityPriceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCartQuantityAndPriceCalculation(Smart Watch, 1, 2, 3, 1)">
+                  </a> <!-- testCartQuantityAndPriceCalculation(Smart Watch, 1, 2, 3, 1) -->
+                  <span class="method-name">testCartQuantityAndPriceCalculation</span>
+                  <span class="parameters">(Smart Watch,1,2,3,1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Subtotal mismatch for quantity 2 expected [true] but found [false]
+	at tests.Scenario3_CartQuantityPriceTest.testCartQuantityAndPriceCalculation(Scenario3_CartQuantityPriceTest.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-JumiaEgyptAutomationSuite-class-failed -->
+          <div class="suite-JumiaEgyptAutomationSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.Scenario2_ProductComparisonCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProductComparisonThroughCart(Wireless Headphones, 3)">
+                  </a> <!-- testProductComparisonThroughCart(Wireless Headphones, 3) -->
+                  <span class="method-name">testProductComparisonThroughCart</span>
+                  <span class="parameters">(Wireless Headphones,3)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	PDP item &apos;Defacto 100% Cotton Plaid Shirt&apos; was not found in cart! expected [true] but found [false]
+	at tests.Scenario2_ProductComparisonCartTest.testProductComparisonThroughCart(Scenario2_ProductComparisonCartTest.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-JumiaEgyptAutomationSuite-class-failed -->
+          <div class="suite-JumiaEgyptAutomationSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.BudgetCartConstraintTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBudgetCartConstraint(13000.0, 0.05, 12350.0, 4)">
+                  </a> <!-- testBudgetCartConstraint(13000.0, 0.05, 12350.0, 4) -->
+                  <span class="method-name">testBudgetCartConstraint</span>
+                  <span class="parameters">(13000.0,0.05,12350.0,4)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Cart product count (9) exceeds maximum limit of 4 expected [true] but found [false]
+	at tests.BudgetCartConstraintTest.testBudgetCartConstraint(BudgetCartConstraintTest.java:112)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-JumiaEgyptAutomationSuite-class-failed -->
+          <div class="suite-JumiaEgyptAutomationSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.Scenario4_MixedCartOperationsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMixedCartOperations([Mobile Phone, Headphones, Power Bank], 2, Headphones)">
+                  </a> <!-- testMixedCartOperations([Mobile Phone, Headphones, Power Bank], 2, Headphones) -->
+                  <span class="method-name">testMixedCartOperations</span>
+                  <span class="parameters">([Mobile Phone, Headphones, Power Bank],2,Headphones)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: No product matching keyword &apos;Headphones&apos; found
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.48.0&apos;, revision: &apos;27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.13&apos;
+Driver info: driver.version: unknown
+	at pages.SearchResultsPage.clickProductByTitleKeyword(SearchResultsPage.java:299)
+	at tests.Scenario4_MixedCartOperationsTest.testMixedCartOperations(Scenario4_MixedCartOperationsTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-JumiaEgyptAutomationSuite-class-failed -->
+          <div class="suite-JumiaEgyptAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.Scenario1_SearchFilterSortTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAdvancedProductSearchFilterAndSort(Samsung Mobile, Samsung, 10000.0, 30000.0, true, 4, rating, 5, 3)">
+                  </a> <!-- testAdvancedProductSearchFilterAndSort(Samsung Mobile, Samsung, 10000.0, 30000.0, true, 4, rating, 5, 3) -->
+                  <span class="method-name">testAdvancedProductSearchFilterAndSort</span>
+                  <span class="parameters">(Samsung Mobile,Samsung,10000.0,30000.0,true,4,rating,5,3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-JumiaEgyptAutomationSuite-class-passed -->
+          <div class="suite-JumiaEgyptAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.Scenario5_GuestCheckoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGuestCheckoutValidation(Power Bank, test.guest.jumia@gmail.com)">
+                  </a> <!-- testGuestCheckoutValidation(Power Bank, test.guest.jumia@gmail.com) -->
+                  <span class="method-name">testGuestCheckoutValidation</span>
+                  <span class="parameters">(Power Bank,test.guest.jumia@gmail.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-JumiaEgyptAutomationSuite-class-passed -->
+          <div class="suite-JumiaEgyptAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.Scenario8_PaginationConsistencyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPaginationAndProductConsistency(Laptop, [1, 2, 3])">
+                  </a> <!-- testPaginationAndProductConsistency(Laptop, [1, 2, 3]) -->
+                  <span class="method-name">testPaginationAndProductConsistency</span>
+                  <span class="parameters">(Laptop,[1, 2, 3])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-JumiaEgyptAutomationSuite-class-passed -->
+          <div class="suite-JumiaEgyptAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.Scenario6_SearchInputsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchFunctionalityInputs(Valid, Samsung, ResultsFound)">
+                  </a> <!-- testSearchFunctionalityInputs(Valid, Samsung, ResultsFound) -->
+                  <span class="method-name">testSearchFunctionalityInputs</span>
+                  <span class="parameters">(Valid,Samsung,ResultsFound)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchFunctionalityInputs(Numbers, 12345678, NoCrash)">
+                  </a> <!-- testSearchFunctionalityInputs(Numbers, 12345678, NoCrash) -->
+                  <span class="method-name">testSearchFunctionalityInputs</span>
+                  <span class="parameters">(Numbers,12345678,NoCrash)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchFunctionalityInputs(SpecialChar, @#$%^&amp;*, NoCrash)">
+                  </a> <!-- testSearchFunctionalityInputs(SpecialChar, @#$%^&*, NoCrash) -->
+                  <span class="method-name">testSearchFunctionalityInputs</span>
+                  <span class="parameters">(SpecialChar,@#$%^&*,NoCrash)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchFunctionalityInputs(Arabic, سامسونج, ResultsFound)">
+                  </a> <!-- testSearchFunctionalityInputs(Arabic, سامسونج, ResultsFound) -->
+                  <span class="method-name">testSearchFunctionalityInputs</span>
+                  <span class="parameters">(Arabic,سامسونج,ResultsFound)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchFunctionalityInputs(Mixed, Samsung 2026 هاتف, Processed)">
+                  </a> <!-- testSearchFunctionalityInputs(Mixed, Samsung 2026 هاتف, Processed) -->
+                  <span class="method-name">testSearchFunctionalityInputs</span>
+                  <span class="parameters">(Mixed,Samsung 2026 هاتف,Processed)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchFunctionalityInputs(Partial, Sam, ResultsFound)">
+                  </a> <!-- testSearchFunctionalityInputs(Partial, Sam, ResultsFound) -->
+                  <span class="method-name">testSearchFunctionalityInputs</span>
+                  <span class="parameters">(Partial,Sam,ResultsFound)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-JumiaEgyptAutomationSuite-class-passed -->
+          <div class="suite-JumiaEgyptAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.Scenario7_WishlistGuestTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGuestWishlistValidation([Shoes, Watch])">
+                  </a> <!-- testGuestWishlistValidation([Shoes, Watch]) -->
+                  <span class="method-name">testGuestWishlistValidation</span>
+                  <span class="parameters">([Shoes, Watch])</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-JumiaEgyptAutomationSuite-class-passed -->
+        </div> <!-- panel JumiaEgyptAutomationSuite -->
+        <div panel-name="test-xml-JumiaEgyptAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\artif\Downloads\Autokit-master\run.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;JumiaEgyptAutomationSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;BudgetCartConstraintTest&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.BudgetCartConstraintTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- BudgetCartConstraintTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;JumiaE2EScenarios&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.Scenario1_SearchFilterSortTest&quot;/&gt;
+      &lt;class name=&quot;tests.Scenario2_ProductComparisonCartTest&quot;/&gt;
+      &lt;class name=&quot;tests.Scenario3_CartQuantityPriceTest&quot;/&gt;
+      &lt;class name=&quot;tests.Scenario4_MixedCartOperationsTest&quot;/&gt;
+      &lt;class name=&quot;tests.Scenario5_GuestCheckoutTest&quot;/&gt;
+      &lt;class name=&quot;tests.Scenario6_SearchInputsTest&quot;/&gt;
+      &lt;class name=&quot;tests.Scenario7_WishlistGuestTest&quot;/&gt;
+      &lt;class name=&quot;tests.Scenario8_PaginationConsistencyTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- JumiaE2EScenarios --&gt;
+&lt;/suite&gt; &lt;!-- JumiaEgyptAutomationSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-JumiaEgyptAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for JumiaEgyptAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">BudgetCartConstraintTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">JumiaE2EScenarios (8 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-JumiaEgyptAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for JumiaEgyptAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-JumiaEgyptAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for JumiaEgyptAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_JumiaEgyptAutomationSuite');
+function tableData_JumiaEgyptAutomationSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(14);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testProductComparisonThroughCart')
+data.setCell(0, 2, 'tests.Scenario2_ProductComparisonCartTest')
+data.setCell(0, 3, 547611);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testCartQuantityAndPriceCalculation')
+data.setCell(1, 2, 'tests.Scenario3_CartQuantityPriceTest')
+data.setCell(1, 3, 376010);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testGuestCheckoutValidation')
+data.setCell(2, 2, 'tests.Scenario5_GuestCheckoutTest')
+data.setCell(2, 3, 353141);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testBudgetCartConstraint')
+data.setCell(3, 2, 'tests.BudgetCartConstraintTest')
+data.setCell(3, 3, 257141);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testGuestWishlistValidation')
+data.setCell(4, 2, 'tests.Scenario7_WishlistGuestTest')
+data.setCell(4, 3, 222846);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testAdvancedProductSearchFilterAndSort')
+data.setCell(5, 2, 'tests.Scenario1_SearchFilterSortTest')
+data.setCell(5, 3, 217677);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testMixedCartOperations')
+data.setCell(6, 2, 'tests.Scenario4_MixedCartOperationsTest')
+data.setCell(6, 3, 155944);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testPaginationAndProductConsistency')
+data.setCell(7, 2, 'tests.Scenario8_PaginationConsistencyTest')
+data.setCell(7, 3, 138790);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testSearchFunctionalityInputs')
+data.setCell(8, 2, 'tests.Scenario6_SearchInputsTest')
+data.setCell(8, 3, 46495);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testSearchFunctionalityInputs')
+data.setCell(9, 2, 'tests.Scenario6_SearchInputsTest')
+data.setCell(9, 3, 44628);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testSearchFunctionalityInputs')
+data.setCell(10, 2, 'tests.Scenario6_SearchInputsTest')
+data.setCell(10, 3, 43734);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testSearchFunctionalityInputs')
+data.setCell(11, 2, 'tests.Scenario6_SearchInputsTest')
+data.setCell(11, 3, 42245);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testSearchFunctionalityInputs')
+data.setCell(12, 2, 'tests.Scenario6_SearchInputsTest')
+data.setCell(12, 3, 40964);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testSearchFunctionalityInputs')
+data.setCell(13, 2, 'tests.Scenario6_SearchInputsTest')
+data.setCell(13, 3, 39482);
+window.suiteTableData['JumiaEgyptAutomationSuite']= { tableData: data, tableDiv: 'times-div-JumiaEgyptAutomationSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 42 minutes</span>
+              <div id="times-div-JumiaEgyptAutomationSuite">
+              </div> <!-- times-div-JumiaEgyptAutomationSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-JumiaEgyptAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for JumiaEgyptAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-JumiaEgyptAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-JumiaEgyptAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.BudgetCartConstraintTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testBudgetCartConstraint(13000.0, 0.05, 12350.0, 4)</span>
+                <span class="method-start">298945 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testBudgetCartConstraint status=FAILURE method=BudgetCartConstraintTest.testBudgetC...)</span>
+                <span class="method-start">556123 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Scenario1_SearchFilterSortTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">557502 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAdvancedProductSearchFilterAndSort(Samsung Mobile, Samsung, 10000.0, 30000.0, true, 4, rating, 5, 3)</span>
+                <span class="method-start">564048 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testAdvancedProductSearchFilterAndSort status=SUCCESS method=Scenario1_SearchFilter...)</span>
+                <span class="method-start">781729 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Scenario2_ProductComparisonCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">782420 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testProductComparisonThroughCart(Wireless Headphones, 3)</span>
+                <span class="method-start">785919 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testProductComparisonThroughCart status=FAILURE method=Scenario2_ProductComparisonC...)</span>
+                <span class="method-start">1333541 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Scenario3_CartQuantityPriceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1334976 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCartQuantityAndPriceCalculation(Smart Watch, 1, 2, 3, 1)</span>
+                <span class="method-start">1339128 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testCartQuantityAndPriceCalculation status=FAILURE method=Scenario3_CartQuantityPri...)</span>
+                <span class="method-start">1715141 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Scenario4_MixedCartOperationsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1715715 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testMixedCartOperations([Mobile Phone, Headphones, Power Bank], 2, Headphones)</span>
+                <span class="method-start">1719256 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testMixedCartOperations status=FAILURE method=Scenario4_MixedCartOperationsTest.tes...)</span>
+                <span class="method-start">1875200 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Scenario5_GuestCheckoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1875832 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGuestCheckoutValidation(Power Bank, test.guest.jumia@gmail.com)</span>
+                <span class="method-start">1878785 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testGuestCheckoutValidation status=SUCCESS method=Scenario5_GuestCheckoutTest.testG...)</span>
+                <span class="method-start">2231931 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Scenario6_SearchInputsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">2234720 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchFunctionalityInputs(Valid, Samsung, ResultsFound)</span>
+                <span class="method-start">2240328 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testSearchFunctionalityInputs status=SUCCESS method=Scenario6_SearchInputsTest.test...)</span>
+                <span class="method-start">2282577 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">2284271 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchFunctionalityInputs(Partial, Sam, ResultsFound)</span>
+                <span class="method-start">2289026 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testSearchFunctionalityInputs status=SUCCESS method=Scenario6_SearchInputsTest.test...)</span>
+                <span class="method-start">2332765 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">2334116 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchFunctionalityInputs(Numbers, 12345678, NoCrash)</span>
+                <span class="method-start">2338787 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testSearchFunctionalityInputs status=SUCCESS method=Scenario6_SearchInputsTest.test...)</span>
+                <span class="method-start">2385287 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">2386623 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchFunctionalityInputs(SpecialChar, @#$%^&*, NoCrash)</span>
+                <span class="method-start">2391945 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testSearchFunctionalityInputs status=SUCCESS method=Scenario6_SearchInputsTest.test...)</span>
+                <span class="method-start">2431431 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">2433027 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchFunctionalityInputs(Arabic, سامسونج, ResultsFound)</span>
+                <span class="method-start">2440374 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testSearchFunctionalityInputs status=SUCCESS method=Scenario6_SearchInputsTest.test...)</span>
+                <span class="method-start">2485004 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">2486107 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchFunctionalityInputs(Mixed, Samsung 2026 هاتف, Processed)</span>
+                <span class="method-start">2492636 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testSearchFunctionalityInputs status=SUCCESS method=Scenario6_SearchInputsTest.test...)</span>
+                <span class="method-start">2533602 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Scenario7_WishlistGuestTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">2534637 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGuestWishlistValidation([Shoes, Watch])</span>
+                <span class="method-start">2539185 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testGuestWishlistValidation status=SUCCESS method=Scenario7_WishlistGuestTest.testG...)</span>
+                <span class="method-start">2762031 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Scenario8_PaginationConsistencyTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">2762914 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPaginationAndProductConsistency(Laptop, [1, 2, 3])</span>
+                <span class="method-start">2766065 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testPaginationAndProductConsistency status=SUCCESS method=Scenario8_PaginationConsi...)</span>
+                <span class="method-start">2904859 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,1 @@
+{"uuid":"8da2606e-56fa-4dc1-a0e6-c6615c892a8b","name":"testCartQuantityAndPriceCalculation","children":["3ff6df6a-d9a0-42f9-ae8a-3483f4ff370d"],"befores":[{"name":"getScenario3Data","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1794509849640,"stop":1794509849640}],"afters":[],"start":1794509849640,"stop":1794510537841}

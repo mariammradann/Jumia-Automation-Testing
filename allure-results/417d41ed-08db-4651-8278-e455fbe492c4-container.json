@@ -1,0 +1,1 @@
+{"uuid":"417d41ed-08db-4651-8278-e455fbe492c4","name":"testGuestCheckoutValidation","children":["e07d3de4-eefe-4f46-b737-64c4b0d93941"],"befores":[{"name":"getScenario5Data","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1794514679682,"stop":1794514679685}],"afters":[],"start":1794514679682,"stop":1794515316401}

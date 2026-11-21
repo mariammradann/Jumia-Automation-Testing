@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [JumiaEgyptAutomationSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="BudgetCartConstraintTest(failed)" verbose="0">
+    <classes>
+      <class name="tests.BudgetCartConstraintTest">
+        <methods>
+          <include name="testBudgetCartConstraint" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.BudgetCartConstraintTest -->
+    </classes>
+  </test> <!-- BudgetCartConstraintTest(failed) -->
+  <test thread-count="5" name="JumiaE2EScenarios(failed)" verbose="0">
+    <classes>
+      <class name="tests.Scenario3_CartQuantityPriceTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testCartQuantityAndPriceCalculation" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.Scenario3_CartQuantityPriceTest -->
+      <class name="tests.Scenario2_ProductComparisonCartTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testProductComparisonThroughCart" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.Scenario2_ProductComparisonCartTest -->
+      <class name="tests.Scenario4_MixedCartOperationsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testMixedCartOperations" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.Scenario4_MixedCartOperationsTest -->
+    </classes>
+  </test> <!-- JumiaE2EScenarios(failed) -->
+</suite> <!-- Failed suite [JumiaEgyptAutomationSuite] -->

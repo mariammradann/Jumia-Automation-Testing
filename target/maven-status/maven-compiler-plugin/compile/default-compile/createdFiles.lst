@@ -1,0 +1,10 @@
+pages\BasePage.class
+pages\ProductDetailsPage.class
+pages\CartPage.class
+pages\HomePage.class
+pages\SearchResultsPage.class
+pages\WishlistModalPage.class
+pages\models\ProductItem.class
+pages\CheckoutLoginPage.class
+pages\loginPage\LoginPage.class
+pages\models\CartItem.class

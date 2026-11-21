@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="10" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-11-20T21:45:10 EET" name="JumiaEgyptAutomationSuite" finished-at="2026-11-20T22:33:36 EET" duration-ms="2906254">
+    <groups>
+    </groups>
+    <test started-at="2026-11-20T21:45:10 EET" name="BudgetCartConstraintTest" finished-at="2026-11-20T21:54:27 EET" duration-ms="557362">
+      <class name="tests.BudgetCartConstraintTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BudgetCartConstraintTest@3381b4fc]" started-at="2026-11-20T21:45:10 EET" name="setUp" finished-at="2026-11-20T21:50:09 EET" duration-ms="298438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBudgetCartConstraint(double,double,double,int)[pri:0, instance:tests.BudgetCartConstraintTest@3381b4fc]" started-at="2026-11-20T21:50:09 EET" name="testBudgetCartConstraint" data-provider="budgetCartData" finished-at="2026-11-20T21:54:26 EET" duration-ms="257141" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[13000.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.05]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12350.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Cart product count (9) exceeds maximum limit of 4 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Cart product count (9) exceeds maximum limit of 4 expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.BudgetCartConstraintTest.testBudgetCartConstraint(BudgetCartConstraintTest.java:112)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBudgetCartConstraint -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.BudgetCartConstraintTest@3381b4fc]" started-at="2026-11-20T21:54:26 EET" name="tearDown" finished-at="2026-11-20T21:54:27 EET" duration-ms="1046" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testBudgetCartConstraint status=FAILURE method=BudgetCartConstraintTest.testBudgetCartConstraint(double,double,double,int)[pri:0, instance:tests.BudgetCartConstraintTest@3381b4fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.BudgetCartConstraintTest -->
+    </test> <!-- BudgetCartConstraintTest -->
+    <test started-at="2026-11-20T21:54:27 EET" name="JumiaE2EScenarios" finished-at="2026-11-20T22:33:36 EET" duration-ms="2348796">
+      <class name="tests.Scenario3_CartQuantityPriceTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Scenario3_CartQuantityPriceTest@63b1d4fa]" started-at="2026-11-20T22:07:25 EET" name="setUp" finished-at="2026-11-20T22:07:29 EET" duration-ms="4145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCartQuantityAndPriceCalculation(java.lang.String,int,int,int,int)[pri:0, instance:tests.Scenario3_CartQuantityPriceTest@63b1d4fa]" started-at="2026-11-20T22:07:29 EET" name="testCartQuantityAndPriceCalculation" data-provider="scenario3Data" finished-at="2026-11-20T22:13:45 EET" duration-ms="376010" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Smart Watch]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Subtotal mismatch for quantity 2 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Subtotal mismatch for quantity 2 expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at tests.Scenario3_CartQuantityPriceTest.testCartQuantityAndPriceCalculation(Scenario3_CartQuantityPriceTest.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartQuantityAndPriceCalculation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Scenario3_CartQuantityPriceTest@63b1d4fa]" started-at="2026-11-20T22:13:45 EET" name="tearDown" finished-at="2026-11-20T22:13:46 EET" duration-ms="567" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCartQuantityAndPriceCalculation status=FAILURE method=Scenario3_CartQuantityPriceTest.testCartQuantityAndPriceCalculation(java.lang.String,int,int,int,int)[pri:0, instance:tests.Scenario3_CartQuantityPriceTest@63b1d4fa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Scenario3_CartQuantityPriceTest -->
+      <class name="tests.Scenario6_SearchInputsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75]" started-at="2026-11-20T22:22:25 EET" name="setUp" finished-at="2026-11-20T22:22:30 EET" duration-ms="5465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchFunctionalityInputs(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75]" started-at="2026-11-20T22:22:31 EET" name="testSearchFunctionalityInputs" data-provider="scenario6CsvData" finished-at="2026-11-20T22:23:13 EET" duration-ms="42245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Samsung]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ResultsFound]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchFunctionalityInputs -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75]" started-at="2026-11-20T22:23:13 EET" name="tearDown" finished-at="2026-11-20T22:23:14 EET" duration-ms="1691" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSearchFunctionalityInputs status=SUCCESS method=Scenario6_SearchInputsTest.testSearchFunctionalityInputs(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75]" started-at="2026-11-20T22:23:14 EET" name="setUp" finished-at="2026-11-20T22:23:19 EET" duration-ms="4751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchFunctionalityInputs(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75]" started-at="2026-11-20T22:23:19 EET" name="testSearchFunctionalityInputs" data-provider="scenario6CsvData" finished-at="2026-11-20T22:24:03 EET" duration-ms="43734" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Partial]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sam]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ResultsFound]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchFunctionalityInputs -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75]" started-at="2026-11-20T22:24:03 EET" name="tearDown" finished-at="2026-11-20T22:24:04 EET" duration-ms="1348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSearchFunctionalityInputs status=SUCCESS method=Scenario6_SearchInputsTest.testSearchFunctionalityInputs(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75]" started-at="2026-11-20T22:24:04 EET" name="setUp" finished-at="2026-11-20T22:24:09 EET" duration-ms="4669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchFunctionalityInputs(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75]" started-at="2026-11-20T22:24:09 EET" name="testSearchFunctionalityInputs" data-provider="scenario6CsvData" finished-at="2026-11-20T22:24:55 EET" duration-ms="46495" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Numbers]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NoCrash]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchFunctionalityInputs -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75]" started-at="2026-11-20T22:24:56 EET" name="tearDown" finished-at="2026-11-20T22:24:57 EET" duration-ms="1333" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSearchFunctionalityInputs status=SUCCESS method=Scenario6_SearchInputsTest.testSearchFunctionalityInputs(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75]" started-at="2026-11-20T22:24:57 EET" name="setUp" finished-at="2026-11-20T22:25:02 EET" duration-ms="5321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchFunctionalityInputs(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75]" started-at="2026-11-20T22:25:02 EET" name="testSearchFunctionalityInputs" data-provider="scenario6CsvData" finished-at="2026-11-20T22:25:42 EET" duration-ms="39482" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SpecialChar]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[@#$%^&*]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NoCrash]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchFunctionalityInputs -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75]" started-at="2026-11-20T22:25:42 EET" name="tearDown" finished-at="2026-11-20T22:25:43 EET" duration-ms="1586" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSearchFunctionalityInputs status=SUCCESS method=Scenario6_SearchInputsTest.testSearchFunctionalityInputs(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75]" started-at="2026-11-20T22:25:43 EET" name="setUp" finished-at="2026-11-20T22:25:51 EET" duration-ms="7344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchFunctionalityInputs(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75]" started-at="2026-11-20T22:25:51 EET" name="testSearchFunctionalityInputs" data-provider="scenario6CsvData" finished-at="2026-11-20T22:26:35 EET" duration-ms="44628" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Arabic]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[سامسونج]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ResultsFound]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchFunctionalityInputs -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75]" started-at="2026-11-20T22:26:35 EET" name="tearDown" finished-at="2026-11-20T22:26:36 EET" duration-ms="1101" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSearchFunctionalityInputs status=SUCCESS method=Scenario6_SearchInputsTest.testSearchFunctionalityInputs(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75]" started-at="2026-11-20T22:26:36 EET" name="setUp" finished-at="2026-11-20T22:26:43 EET" duration-ms="6527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchFunctionalityInputs(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75]" started-at="2026-11-20T22:26:43 EET" name="testSearchFunctionalityInputs" data-provider="scenario6CsvData" finished-at="2026-11-20T22:27:24 EET" duration-ms="40964" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mixed]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Samsung 2026 هاتف]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Processed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchFunctionalityInputs -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75]" started-at="2026-11-20T22:27:24 EET" name="tearDown" finished-at="2026-11-20T22:27:25 EET" duration-ms="1031" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSearchFunctionalityInputs status=SUCCESS method=Scenario6_SearchInputsTest.testSearchFunctionalityInputs(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.Scenario6_SearchInputsTest@75459c75] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Scenario6_SearchInputsTest -->
+      <class name="tests.Scenario4_MixedCartOperationsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Scenario4_MixedCartOperationsTest@42e3ede4]" started-at="2026-11-20T22:13:46 EET" name="setUp" finished-at="2026-11-20T22:13:49 EET" duration-ms="3541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMixedCartOperations([Ljava.lang.String;,int,java.lang.String)[pri:0, instance:tests.Scenario4_MixedCartOperationsTest@42e3ede4]" started-at="2026-11-20T22:13:49 EET" name="testMixedCartOperations" data-provider="scenario4Data" finished-at="2026-11-20T22:16:25 EET" duration-ms="155944" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@23307c6c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Headphones]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[No product matching keyword 'Headphones' found
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: No product matching keyword 'Headphones' found
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: driver.version: unknown
+at pages.SearchResultsPage.clickProductByTitleKeyword(SearchResultsPage.java:299)
+at tests.Scenario4_MixedCartOperationsTest.testMixedCartOperations(Scenario4_MixedCartOperationsTest.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMixedCartOperations -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Scenario4_MixedCartOperationsTest@42e3ede4]" started-at="2026-11-20T22:16:25 EET" name="tearDown" finished-at="2026-11-20T22:16:26 EET" duration-ms="624" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMixedCartOperations status=FAILURE method=Scenario4_MixedCartOperationsTest.testMixedCartOperations([Ljava.lang.String;,int,java.lang.String)[pri:0, instance:tests.Scenario4_MixedCartOperationsTest@42e3ede4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Scenario4_MixedCartOperationsTest -->
+      <class name="tests.Scenario2_ProductComparisonCartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Scenario2_ProductComparisonCartTest@328cf0e1]" started-at="2026-11-20T21:58:13 EET" name="setUp" finished-at="2026-11-20T21:58:16 EET" duration-ms="3496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testProductComparisonThroughCart(java.lang.String,int)[pri:0, instance:tests.Scenario2_ProductComparisonCartTest@328cf0e1]" started-at="2026-11-20T21:58:16 EET" name="testProductComparisonThroughCart" data-provider="scenario2Data" finished-at="2026-11-20T22:07:24 EET" duration-ms="547611" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Wireless Headphones]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+PDP item 'Defacto 100% Cotton Plaid Shirt' was not found in cart! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+PDP item 'Defacto 100% Cotton Plaid Shirt' was not found in cart! expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at tests.Scenario2_ProductComparisonCartTest.testProductComparisonThroughCart(Scenario2_ProductComparisonCartTest.java:78)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductComparisonThroughCart -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Scenario2_ProductComparisonCartTest@328cf0e1]" started-at="2026-11-20T22:07:24 EET" name="tearDown" finished-at="2026-11-20T22:07:25 EET" duration-ms="1429" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testProductComparisonThroughCart status=FAILURE method=Scenario2_ProductComparisonCartTest.testProductComparisonThroughCart(java.lang.String,int)[pri:0, instance:tests.Scenario2_ProductComparisonCartTest@328cf0e1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Scenario2_ProductComparisonCartTest -->
+      <class name="tests.Scenario1_SearchFilterSortTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Scenario1_SearchFilterSortTest@2fc0cc3]" started-at="2026-11-20T21:54:28 EET" name="setUp" finished-at="2026-11-20T21:54:34 EET" duration-ms="6540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAdvancedProductSearchFilterAndSort(java.lang.String,java.lang.String,double,double,boolean,int,java.lang.String,int,int)[pri:0, instance:tests.Scenario1_SearchFilterSortTest@2fc0cc3]" started-at="2026-11-20T21:54:34 EET" name="testAdvancedProductSearchFilterAndSort" data-provider="scenario1Data" finished-at="2026-11-20T21:58:12 EET" duration-ms="217677" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Samsung Mobile]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Samsung]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[10000.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[30000.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[rating]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdvancedProductSearchFilterAndSort -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Scenario1_SearchFilterSortTest@2fc0cc3]" started-at="2026-11-20T21:58:12 EET" name="tearDown" finished-at="2026-11-20T21:58:13 EET" duration-ms="682" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAdvancedProductSearchFilterAndSort status=SUCCESS method=Scenario1_SearchFilterSortTest.testAdvancedProductSearchFilterAndSort(java.lang.String,java.lang.String,double,double,boolean,int,java.lang.String,int,int)[pri:0, instance:tests.Scenario1_SearchFilterSortTest@2fc0cc3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Scenario1_SearchFilterSortTest -->
+      <class name="tests.Scenario8_PaginationConsistencyTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Scenario8_PaginationConsistencyTest@45efc20d]" started-at="2026-11-20T22:31:13 EET" name="setUp" finished-at="2026-11-20T22:31:16 EET" duration-ms="3150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPaginationAndProductConsistency(java.lang.String,[I)[pri:0, instance:tests.Scenario8_PaginationConsistencyTest@45efc20d]" started-at="2026-11-20T22:31:16 EET" name="testPaginationAndProductConsistency" data-provider="scenario8Data" finished-at="2026-11-20T22:33:35 EET" duration-ms="138790" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Laptop]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[I@2ea55742]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPaginationAndProductConsistency -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Scenario8_PaginationConsistencyTest@45efc20d]" started-at="2026-11-20T22:33:35 EET" name="tearDown" finished-at="2026-11-20T22:33:36 EET" duration-ms="1208" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPaginationAndProductConsistency status=SUCCESS method=Scenario8_PaginationConsistencyTest.testPaginationAndProductConsistency(java.lang.String,[I)[pri:0, instance:tests.Scenario8_PaginationConsistencyTest@45efc20d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Scenario8_PaginationConsistencyTest -->
+      <class name="tests.Scenario7_WishlistGuestTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Scenario7_WishlistGuestTest@183e8023]" started-at="2026-11-20T22:27:25 EET" name="setUp" finished-at="2026-11-20T22:27:29 EET" duration-ms="4546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGuestWishlistValidation([Ljava.lang.String;)[pri:0, instance:tests.Scenario7_WishlistGuestTest@183e8023]" started-at="2026-11-20T22:27:29 EET" name="testGuestWishlistValidation" data-provider="scenario7Data" finished-at="2026-11-20T22:31:12 EET" duration-ms="222846" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@5c3b3f04]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGuestWishlistValidation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Scenario7_WishlistGuestTest@183e8023]" started-at="2026-11-20T22:31:12 EET" name="tearDown" finished-at="2026-11-20T22:31:13 EET" duration-ms="883" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGuestWishlistValidation status=SUCCESS method=Scenario7_WishlistGuestTest.testGuestWishlistValidation([Ljava.lang.String;)[pri:0, instance:tests.Scenario7_WishlistGuestTest@183e8023] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Scenario7_WishlistGuestTest -->
+      <class name="tests.Scenario5_GuestCheckoutTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Scenario5_GuestCheckoutTest@201b6b6f]" started-at="2026-11-20T22:16:26 EET" name="setUp" finished-at="2026-11-20T22:16:29 EET" duration-ms="2937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGuestCheckoutValidation(java.lang.String,java.lang.String)[pri:0, instance:tests.Scenario5_GuestCheckoutTest@201b6b6f]" started-at="2026-11-20T22:16:29 EET" name="testGuestCheckoutValidation" data-provider="scenario5Data" finished-at="2026-11-20T22:22:22 EET" duration-ms="353141" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Power Bank]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test.guest.jumia@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGuestCheckoutValidation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Scenario5_GuestCheckoutTest@201b6b6f]" started-at="2026-11-20T22:22:22 EET" name="tearDown" finished-at="2026-11-20T22:22:25 EET" duration-ms="2633" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGuestCheckoutValidation status=SUCCESS method=Scenario5_GuestCheckoutTest.testGuestCheckoutValidation(java.lang.String,java.lang.String)[pri:0, instance:tests.Scenario5_GuestCheckoutTest@201b6b6f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Scenario5_GuestCheckoutTest -->
+    </test> <!-- JumiaE2EScenarios -->
+  </suite> <!-- JumiaEgyptAutomationSuite -->
+</testng-results>

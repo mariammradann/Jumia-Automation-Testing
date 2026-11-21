@@ -1,0 +1,8 @@
+inputType,searchQuery,expectedBehavior
+Valid,Samsung,ResultsFound
+Partial,Sam,ResultsFound
+Numbers,12345678,NoCrash
+SpecialChar,@#$%^&*,NoCrash
+Arabic,سامسونج,ResultsFound
+Mixed,Samsung 2026 هاتف,Processed
+

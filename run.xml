@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="JumiaEgyptAutomationSuite" verbose="2">
+    <test name="BudgetCartConstraintTest">
+        <classes>
+            <class name="tests.BudgetCartConstraintTest"/>
+        </classes>
+    </test>
+    <test name="JumiaE2EScenarios">
+        <classes>
+            <class name="tests.Scenario1_SearchFilterSortTest"/>
+            <class name="tests.Scenario2_ProductComparisonCartTest"/>
+            <class name="tests.Scenario3_CartQuantityPriceTest"/>
+            <class name="tests.Scenario4_MixedCartOperationsTest"/>
+            <class name="tests.Scenario5_GuestCheckoutTest"/>
+            <class name="tests.Scenario6_SearchInputsTest"/>
+            <class name="tests.Scenario7_WishlistGuestTest"/>
+            <class name="tests.Scenario8_PaginationConsistencyTest"/>
+        </classes>
+    </test>
+</suite>

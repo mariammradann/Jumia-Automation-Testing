@@ -1,0 +1,1 @@
+{"uuid":"acfa906e-0cb3-4feb-86ff-20f72b31c3ff","name":"testMixedCartOperations","children":["bc13346a-8299-454a-9423-58b2ba6baaa2"],"befores":[{"name":"getScenario4Data","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1794512717190,"stop":1794512717193}],"afters":[],"start":1794512717190,"stop":1794513565323}

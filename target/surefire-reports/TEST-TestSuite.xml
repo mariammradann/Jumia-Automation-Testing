@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="2910.014" tests="14" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\artif\Downloads\Autokit-master\target\test-classes;C:\Users\artif\Downloads\Autokit-master\target\classes;C:\Users\artif\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\artif\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\artif\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\artif\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-java\4.48.0\selenium-java-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-api\4.48.0\selenium-api-4.48.0.jar;C:\Users\artif\.m2\repository\org\jspecify\jspecify\1.0.1\jspecify-1.0.1.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.48.0\selenium-chrome-driver-4.48.0.jar;C:\Users\artif\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.48.0\selenium-chromium-driver-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-json\4.48.0\selenium-json-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.48.0\selenium-manager-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-devtools-latest\4.48.0\selenium-devtools-latest-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v150\4.48.0\selenium-devtools-v150-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v151\4.48.0\selenium-devtools-v151-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v152\4.48.0\selenium-devtools-v152-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.48.0\selenium-edge-driver-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.48.0\selenium-firefox-driver-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-http\4.48.0\selenium-http-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.48.0\selenium-ie-driver-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.48.0\selenium-remote-driver-4.48.0.jar;C:\Users\artif\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\artif\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\artif\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\artif\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-api\1.65.0\opentelemetry-api-1.65.0.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-context\1.65.0\opentelemetry-context-1.65.0.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-common\1.65.0\opentelemetry-common-1.65.0.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.65.0\opentelemetry-exporter-logging-1.65.0.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.65.0\opentelemetry-sdk-common-1.65.0.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.65.0\opentelemetry-sdk-extension-autoconfigure-spi-1.65.0.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.65.0\opentelemetry-sdk-extension-autoconfigure-1.65.0.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.65.0\opentelemetry-sdk-trace-1.65.0.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.65.0\opentelemetry-sdk-1.65.0.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.65.0\opentelemetry-sdk-metrics-1.65.0.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.65.0\opentelemetry-sdk-logs-1.65.0.jar;C:\Users\artif\.m2\repository\net\bytebuddy\byte-buddy\1.18.11\byte-buddy-1.18.11.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-os\4.48.0\selenium-os-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.48.0\selenium-safari-driver-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-support\4.48.0\selenium-support-4.48.0.jar;C:\Users\artif\.m2\repository\com\google\code\gson\gson\2.14.0\gson-2.14.0.jar;C:\Users\artif\.m2\repository\com\google\errorprone\error_prone_annotations\2.48.0\error_prone_annotations-2.48.0.jar;C:\Users\artif\.m2\repository\org\apache\logging\log4j\log4j-core\2.26.1\log4j-core-2.26.1.jar;C:\Users\artif\.m2\repository\org\apache\logging\log4j\log4j-api\2.26.1\log4j-api-2.26.1.jar;C:\Users\artif\.m2\repository\io\qameta\allure\allure-testng\2.35.5\allure-testng-2.35.5.jar;C:\Users\artif\.m2\repository\io\qameta\allure\allure-java-commons\2.35.5\allure-java-commons-2.35.5.jar;C:\Users\artif\.m2\repository\io\qameta\allure\allure-model\2.35.5\allure-model-2.35.5.jar;C:\Users\artif\.m2\repository\io\qameta\allure\allure-test-filter\2.35.5\allure-test-filter-2.35.5.jar;C:\Users\artif\.m2\repository\com\opencsv\opencsv\5.12.0\opencsv-5.12.0.jar;C:\Users\artif\.m2\repository\org\apache\commons\commons-lang3\3.18.0\commons-lang3-3.18.0.jar;C:\Users\artif\.m2\repository\org\apache\commons\commons-text\1.13.1\commons-text-1.13.1.jar;C:\Users\artif\.m2\repository\commons-beanutils\commons-beanutils\1.11.0\commons-beanutils-1.11.0.jar;C:\Users\artif\.m2\repository\commons-logging\commons-logging\1.3.5\commons-logging-1.3.5.jar;C:\Users\artif\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\artif\.m2\repository\org\apache\commons\commons-collections4\4.5.0\commons-collections4-4.5.0.jar;C:\Users\artif\.m2\repository\org\apache\poi\poi\5.5.1\poi-5.5.1.jar;C:\Users\artif\.m2\repository\commons-codec\commons-codec\1.20.0\commons-codec-1.20.0.jar;C:\Users\artif\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\artif\.m2\repository\commons-io\commons-io\2.21.0\commons-io-2.21.0.jar;C:\Users\artif\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\artif\.m2\repository\org\apache\poi\poi-ooxml\5.5.1\poi-ooxml-5.5.1.jar;C:\Users\artif\.m2\repository\org\apache\poi\poi-ooxml-lite\5.5.1\poi-ooxml-lite-5.5.1.jar;C:\Users\artif\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\artif\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\artif\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\artif\.m2\repository\org\apache\commons\commons-csv\1.14.1\commons-csv-1.14.1.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Africa/Cairo"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.13.9-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\artif\AppData\Local\Temp\surefire4875143553131543604\surefirebooter-20261120214506202_3.jar C:\Users\artif\AppData\Local\Temp\surefire4875143553131543604 2026-11-20T21-45-05_395-jvmRun1 surefire-20261120214506202_1tmp surefire_0-20261120214506202_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\artif\Downloads\Autokit-master\target\test-classes;C:\Users\artif\Downloads\Autokit-master\target\classes;C:\Users\artif\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\artif\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\artif\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\artif\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-java\4.48.0\selenium-java-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-api\4.48.0\selenium-api-4.48.0.jar;C:\Users\artif\.m2\repository\org\jspecify\jspecify\1.0.1\jspecify-1.0.1.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.48.0\selenium-chrome-driver-4.48.0.jar;C:\Users\artif\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.48.0\selenium-chromium-driver-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-json\4.48.0\selenium-json-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.48.0\selenium-manager-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-devtools-latest\4.48.0\selenium-devtools-latest-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v150\4.48.0\selenium-devtools-v150-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v151\4.48.0\selenium-devtools-v151-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v152\4.48.0\selenium-devtools-v152-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.48.0\selenium-edge-driver-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.48.0\selenium-firefox-driver-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-http\4.48.0\selenium-http-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.48.0\selenium-ie-driver-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.48.0\selenium-remote-driver-4.48.0.jar;C:\Users\artif\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\artif\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\artif\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\artif\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-api\1.65.0\opentelemetry-api-1.65.0.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-context\1.65.0\opentelemetry-context-1.65.0.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-common\1.65.0\opentelemetry-common-1.65.0.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.65.0\opentelemetry-exporter-logging-1.65.0.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.65.0\opentelemetry-sdk-common-1.65.0.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.65.0\opentelemetry-sdk-extension-autoconfigure-spi-1.65.0.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.65.0\opentelemetry-sdk-extension-autoconfigure-1.65.0.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.65.0\opentelemetry-sdk-trace-1.65.0.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.65.0\opentelemetry-sdk-1.65.0.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.65.0\opentelemetry-sdk-metrics-1.65.0.jar;C:\Users\artif\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.65.0\opentelemetry-sdk-logs-1.65.0.jar;C:\Users\artif\.m2\repository\net\bytebuddy\byte-buddy\1.18.11\byte-buddy-1.18.11.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-os\4.48.0\selenium-os-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.48.0\selenium-safari-driver-4.48.0.jar;C:\Users\artif\.m2\repository\org\seleniumhq\selenium\selenium-support\4.48.0\selenium-support-4.48.0.jar;C:\Users\artif\.m2\repository\com\google\code\gson\gson\2.14.0\gson-2.14.0.jar;C:\Users\artif\.m2\repository\com\google\errorprone\error_prone_annotations\2.48.0\error_prone_annotations-2.48.0.jar;C:\Users\artif\.m2\repository\org\apache\logging\log4j\log4j-core\2.26.1\log4j-core-2.26.1.jar;C:\Users\artif\.m2\repository\org\apache\logging\log4j\log4j-api\2.26.1\log4j-api-2.26.1.jar;C:\Users\artif\.m2\repository\io\qameta\allure\allure-testng\2.35.5\allure-testng-2.35.5.jar;C:\Users\artif\.m2\repository\io\qameta\allure\allure-java-commons\2.35.5\allure-java-commons-2.35.5.jar;C:\Users\artif\.m2\repository\io\qameta\allure\allure-model\2.35.5\allure-model-2.35.5.jar;C:\Users\artif\.m2\repository\io\qameta\allure\allure-test-filter\2.35.5\allure-test-filter-2.35.5.jar;C:\Users\artif\.m2\repository\com\opencsv\opencsv\5.12.0\opencsv-5.12.0.jar;C:\Users\artif\.m2\repository\org\apache\commons\commons-lang3\3.18.0\commons-lang3-3.18.0.jar;C:\Users\artif\.m2\repository\org\apache\commons\commons-text\1.13.1\commons-text-1.13.1.jar;C:\Users\artif\.m2\repository\commons-beanutils\commons-beanutils\1.11.0\commons-beanutils-1.11.0.jar;C:\Users\artif\.m2\repository\commons-logging\commons-logging\1.3.5\commons-logging-1.3.5.jar;C:\Users\artif\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\artif\.m2\repository\org\apache\commons\commons-collections4\4.5.0\commons-collections4-4.5.0.jar;C:\Users\artif\.m2\repository\org\apache\poi\poi\5.5.1\poi-5.5.1.jar;C:\Users\artif\.m2\repository\commons-codec\commons-codec\1.20.0\commons-codec-1.20.0.jar;C:\Users\artif\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\artif\.m2\repository\commons-io\commons-io\2.21.0\commons-io-2.21.0.jar;C:\Users\artif\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\artif\.m2\repository\org\apache\poi\poi-ooxml\5.5.1\poi-ooxml-5.5.1.jar;C:\Users\artif\.m2\repository\org\apache\poi\poi-ooxml-lite\5.5.1\poi-ooxml-lite-5.5.1.jar;C:\Users\artif\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\artif\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\artif\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\artif\.m2\repository\org\apache\commons\commons-csv\1.14.1\commons-csv-1.14.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\artif"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-10-20"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.13.9-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\artif\Downloads\Autokit-master"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\artif\AppData\Local\Temp\surefire4875143553131543604\surefirebooter-20261120214506202_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.13+9-LTS"/>
+    <property name="user.name" value="artif"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.13+9"/>
+    <property name="localRepository" value="C:\Users\artif\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\artif\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.13"/>
+    <property name="user.dir" value="C:\Users\artif\Downloads\Autokit-master"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.13.9-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Users\artif\AppData\Local\Microsoft\WindowsApps;C:\Users\artif\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\artif\AppData\Roaming\npm;c:\Users\artif\.antigravity-ide\extensions\vscjava.vscode-java-debug-0.60.0-universal\bundled\scripts\noConfigScripts;C:\Users\artif\maven\apache-maven-3.9.6\bin;C:\Program Files\Eclipse Adoptium\jdk-21.0.13.9-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-21.0.13.9-hotspot\bin;C:\Users\artif\maven\apache-maven-3.9.6\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.13+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testBudgetCartConstraint[13000.0, 0.05, 12350.0, 4](1)" classname="tests.BudgetCartConstraintTest" time="257.177">
+    <failure message="Cart product count (9) exceeds maximum limit of 4 expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Cart product count (9) exceeds maximum limit of 4 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at tests.BudgetCartConstraintTest.testBudgetCartConstraint(BudgetCartConstraintTest.java:112)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[...
+... TestNG 7.12.0 by Cédric Beust (cedric@beust.com)
+...
+
+2026-11-20 21:45:10 - Configurations loaded from src/main/resources/config.properties
+2026-11-20 21:45:10 - ================================================================================
+2026-11-20 21:45:10 - Starting Test Execution on thread: 1
+2026-11-20 21:45:10 - DriverManager Singleton instance initialized
+2026-11-20 21:45:10 - Initializing WebDriver for browser: chrome | headless: false
+2026-11-20 21:50:06 - WebDriver created and registered to thread: 1
+2026-11-20 21:50:06 - Navigating to Base URL: https://www.jumia.com.eg/
+2026-11-20 21:50:09 - ========================================================================
+2026-11-20 21:50:09 - BUDGET CONSTRAINT TEST: Target: 13000.0 EGP | Max Products: 4 | Min Allowed (95%): 12350.0 EGP
+2026-11-20 21:50:09 - ========================================================================
+2026-11-20 21:50:21 - Performing search for: 'Mobile Phone'
+2026-11-20 21:50:37 - Applying direct catalog search URL fallback for: 'Mobile Phone'
+2026-11-20 21:50:47 - Dismissing newsletter popup
+2026-11-20 21:50:48 - Accepting cookies banner
+2026-11-20 21:50:54 - Applying Price filter: 2000.0 to 13000.0 EGP
+2026-11-20 21:51:22 - Found 15 candidate products for budget allocation
+2026-11-20 21:51:22 - Selected 1 products for purchase:
+2026-11-20 21:51:22 - 'OPPO A6 Dual SIM 4G 128GB/4GB - Aurora Gold' - Price: 12999.0 EGP
+2026-11-20 21:51:22 - Total Planned Sum: 12999.0 EGP (Target: 13000.0, Min: 12350.0)
+2026-11-20 21:51:22 - Navigating to product [1]: 'OPPO A6 Dual SIM 4G 128GB/4GB - Aurora Gold'
+2026-11-20 21:51:36 - Adding product to cart
+2026-11-20 21:51:50 - Add to Cart clicked via CSS selector
+2026-11-20 21:51:55 - Add-to-Cart popup not detected or already closed: Expected condition failed: waiting for element found by By.xpath: //button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')]"}.
+(tried for 5 seconds with 500 milliseconds interval)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\artif\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57977}, goog:processID: 20380, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57977/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4277e644d13077797dd8397bbe63a635
+2026-11-20 21:52:00 - Add-to-Cart popup not detected or already closed: Expected condition failed: waiting for element found by By.xpath: //button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')]"}.
+(tried for 5 seconds with 500 milliseconds interval)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\artif\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57977}, goog:processID: 20380, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57977/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4277e644d13077797dd8397bbe63a635
+2026-11-20 21:52:05 - Add-to-Cart popup not detected or already closed: Expected condition failed: waiting for element found by By.xpath: //button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')]"}.
+(tried for 5 seconds with 500 milliseconds interval)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\artif\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57977}, goog:processID: 20380, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57977/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4277e644d13077797dd8397bbe63a635
+2026-11-20 21:52:14 - Added to cart (1/4): 'OPPO A6 Dual SIM 4G 128GB/4GB - Aurora Gold'
+2026-11-20 21:52:14 - Navigating to Cart
+2026-11-20 21:52:54 - Cart Item [1]: 'OPPO A6 Dual SIM 4G 128GB/4GB - Aurora Gold' | Unit Price: 12999.0 EGP | Qty: 1 | Subtotal: 12999.0 EGP
+2026-11-20 21:53:04 - Cart Item [2]: 'OPPO A6 6.75" 4GB RAM/128GB ROM Android 15 4G- Aurora Gold' | Unit Price: 12459.0 EGP | Qty: 1 | Subtotal: 12459.0 EGP
+2026-11-20 21:53:14 - Cart Item [3]: 'OPPO A6 -6.7-Inch 128GB/4GB Dual SIM 4G Mobile Phone - Sapphire Blue' | Unit Price: 13999.0 EGP | Qty: 1 | Subtotal: 13999.0 EGP
+2026-11-20 21:53:25 - Cart Item [4]: 'OPPO A6 -6.7-Inch 128GB/6GB Dual SIM 4G Mobile Phone - Sapphire Blue' | Unit Price: 14990.0 EGP | Qty: 1 | Subtotal: 14990.0 EGP
+2026-11-20 21:53:35 - Cart Item [5]: 'OPPO A6 Dual SIM, 256GB, 8GB RAM, 4G LTE - Sapphire Blue' | Unit Price: 17699.0 EGP | Qty: 1 | Subtotal: 17699.0 EGP
+2026-11-20 21:53:45 - Cart Item [6]: 'Realme C85 Dual SIM 256GB/8GB Ram 4G -kingfisher Blue' | Unit Price: 14899.0 EGP | Qty: 1 | Subtotal: 14899.0 EGP
+2026-11-20 21:53:55 - Cart Item [7]: 'Honor X7e 6GB 128GB 4G Light Blue' | Unit Price: 12885.0 EGP | Qty: 1 | Subtotal: 12885.0 EGP
+2026-11-20 21:54:06 - Cart Item [8]: 'Honor X7e Plus 5G ( 6GB+128GB ),Desert Gold+X7e Active' | Unit Price: 14899.0 EGP | Qty: 1 | Subtotal: 14899.0 EGP
+2026-11-20 21:54:16 - Cart Item [9]: 'Honor X7e 6GB 256GB 4G Midnight Black' | Unit Price: 13199.0 EGP | Qty: 1 | Subtotal: 13199.0 EGP
+2026-11-20 21:54:26 - =================== CART SUMMARY ===================
+2026-11-20 21:54:26 - Items Count in Cart: 9
+2026-11-20 21:54:26 - Actual Cart Total: 12999.0 EGP
+2026-11-20 21:54:26 - Target Budget: 13000.0 EGP
+2026-11-20 21:54:26 - Min Required Budget (-5%): 12350.0 EGP
+2026-11-20 21:54:26 - ===================================================
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Nov 20, 2026 9:50:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 156, returning the closest version; found: 152; Please update to a Selenium version that supports CDP version 156
+]]></system-err>
+  </testcase>
+  <testcase name="testAdvancedProductSearchFilterAndSort[Samsung Mobile, Samsung, 10000.0, 30000.0, true, 4, rating, 5, 3](1)" classname="tests.Scenario1_SearchFilterSortTest" time="217.675">
+    <system-out><![CDATA[2026-11-20 21:54:26 - Test FAILED: testBudgetCartConstraint
+2026-11-20 21:54:26 - Taking screenshot for test: testBudgetCartConstraint
+2026-11-20 21:54:27 - Screenshot saved: C:\Users\artif\Downloads\Autokit-master\screenshots\testBudgetCartConstraint_20261120_215427.png
+2026-11-20 21:54:27 - Quitting WebDriver session
+2026-11-20 21:54:27 - Quitting WebDriver for thread: 1
+2026-11-20 21:54:27 - ================================================================================
+2026-11-20 21:54:28 - Loading Scenario 1 DDT data from JSON
+2026-11-20 21:54:28 - Loading JSON from [src/main/resources/file.json]
+2026-11-20 21:54:28 - Loaded 8 top-level keys from [src/main/resources/file.json]
+2026-11-20 21:54:28 - Map under key 'scenario1' has 9 entries
+2026-11-20 21:54:28 - Fallback to default Scenario 1 data: For input string: "5.0"
+2026-11-20 21:54:28 - ================================================================================
+2026-11-20 21:54:28 - Starting Test Execution on thread: 1
+2026-11-20 21:54:28 - Initializing WebDriver for browser: chrome | headless: false
+2026-11-20 21:54:31 - WebDriver created and registered to thread: 1
+2026-11-20 21:54:31 - Navigating to Base URL: https://www.jumia.com.eg/
+2026-11-20 21:54:34 - Starting Scenario 1: Search 'Samsung Mobile', Brand 'Samsung', Price [10000.0 - 30000.0], Rating 4+
+2026-11-20 21:54:45 - Performing search for: 'Samsung Mobile'
+2026-11-20 21:55:01 - Applying direct catalog search URL fallback for: 'Samsung Mobile'
+2026-11-20 21:55:07 - Dismissing newsletter popup
+2026-11-20 21:55:08 - Accepting cookies banner
+2026-11-20 21:55:15 - Applying Brand filter: Samsung
+2026-11-20 21:55:34 - Applying Price filter: 10000.0 to 30000.0 EGP
+2026-11-20 21:55:58 - Applying Official Store filter
+2026-11-20 21:56:27 - Applying Rating filter: 4 stars and above
+2026-11-20 21:56:51 - Sorting results by: rating
+2026-11-20 21:57:16 - Stored 5 products from Page 1
+2026-11-20 21:57:16 - Navigating to catalog page: 2
+2026-11-20 21:57:44 - Page 2: Retrieved 5 products
+2026-11-20 21:57:44 - Navigating to catalog page: 3
+2026-11-20 21:58:12 - Page 3: Retrieved 5 products
+2026-11-20 21:58:12 - Scenario 1 completed successfully
+]]></system-out>
+    <system-err><![CDATA[Nov 20, 2026 9:54:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 156, returning the closest version; found: 152; Please update to a Selenium version that supports CDP version 156
+]]></system-err>
+  </testcase>
+  <testcase name="testProductComparisonThroughCart[Wireless Headphones, 3](1)" classname="tests.Scenario2_ProductComparisonCartTest" time="547.621">
+    <failure message="The following asserts failed:&#10;	PDP item &apos;Defacto 100% Cotton Plaid Shirt&apos; was not found in cart! expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	PDP item 'Defacto 100% Cotton Plaid Shirt' was not found in cart! expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.Scenario2_ProductComparisonCartTest.testProductComparisonThroughCart(Scenario2_ProductComparisonCartTest.java:78)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[2026-11-20 21:58:12 - Test PASSED: testAdvancedProductSearchFilterAndSort
+2026-11-20 21:58:12 - Quitting WebDriver session
+2026-11-20 21:58:12 - Quitting WebDriver for thread: 1
+2026-11-20 21:58:13 - ================================================================================
+2026-11-20 21:58:13 - Loading Scenario 2 DDT data from JSON
+2026-11-20 21:58:13 - Loading JSON from [src/main/resources/file.json]
+2026-11-20 21:58:13 - Loaded 8 top-level keys from [src/main/resources/file.json]
+2026-11-20 21:58:13 - Map under key 'scenario2' has 2 entries
+2026-11-20 21:58:13 - ================================================================================
+2026-11-20 21:58:13 - Starting Test Execution on thread: 1
+2026-11-20 21:58:13 - Initializing WebDriver for browser: chrome | headless: false
+2026-11-20 21:58:14 - WebDriver created and registered to thread: 1
+2026-11-20 21:58:14 - Navigating to Base URL: https://www.jumia.com.eg/
+2026-11-20 21:58:16 - Starting Scenario 2: Search 'Wireless Headphones' and compare 3 products in cart
+2026-11-20 21:58:27 - Performing search for: 'Wireless Headphones'
+2026-11-20 21:58:42 - Applying direct catalog search URL fallback for: 'Wireless Headphones'
+2026-11-20 21:58:48 - Dismissing newsletter popup
+2026-11-20 21:58:48 - Accepting cookies banner
+2026-11-20 21:58:55 - Clicking product at index: 0
+2026-11-20 21:59:02 - Navigating directly to verified product URL: https://www.jumia.com.eg/defacto-100-cotton-plaid-shirt-134147886.html
+2026-11-20 21:59:27 - Waiting for element: By.cssSelector: span[data-price='true'], .-b.-ubpt, .prc.-fs24
+2026-11-20 21:59:27 - Retrieved text from By.cssSelector: span[data-price='true'], .-b.-ubpt, .prc.-fs24: 'EGP 509.00'
+2026-11-20 21:59:27 - Waiting for element: By.cssSelector: span[data-price='true'], .-b.-ubpt, .prc.-fs24
+2026-11-20 21:59:27 - Retrieved text from By.cssSelector: span[data-price='true'], .-b.-ubpt, .prc.-fs24: 'EGP 509.00'
+2026-11-20 21:59:27 - Waiting for element: By.xpath: //div[contains(., 'Seller Information') or contains(., 'معلومات البائع')]/following-sibling::div//p[contains(@class, '-m')] | //p[contains(@class, '-m -pbm')]
+2026-11-20 21:59:27 - Retrieved text from By.xpath: //div[contains(., 'Seller Information') or contains(., 'معلومات البائع')]/following-sibling::div//p[contains(@class, '-m')] | //p[contains(@class, '-m -pbm')]: 'Defacto Egypt Official'
+2026-11-20 21:59:27 - Waiting for element: By.cssSelector: .stars._m, .-df.-i-ctr.-fs12 .stars, .rv-avg
+2026-11-20 21:59:27 - Retrieved text from By.cssSelector: .stars._m, .-df.-i-ctr.-fs12 .stars, .rv-avg: '5 out of 5'
+2026-11-20 21:59:27 - Captured PDP Details -> Title: 'Defacto 100% Cotton Plaid Shirt' | Price: 509.0 EGP | Seller: 'Defacto Egypt Official' | Rating: 5.0
+2026-11-20 21:59:27 - Adding product to cart
+2026-11-20 21:59:41 - Add to Cart clicked via CSS selector
+2026-11-20 21:59:42 - Closed Add-to-Cart confirmation popup via explicit wait
+2026-11-20 21:59:47 - Add-to-Cart popup not detected or already closed: Expected condition failed: waiting for element found by By.xpath: //button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')] to be clickable, but the element was not visible.
+(tried for 5 seconds with 500 milliseconds interval)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\artif\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65214}, goog:processID: 13084, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65214/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bd9b017cc9dc468e49ef2a2642f8cb7
+2026-11-20 21:59:52 - Add-to-Cart popup not detected or already closed: Expected condition failed: waiting for element found by By.xpath: //button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')] to be clickable, but the element was not visible.
+(tried for 5 seconds with 500 milliseconds interval)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\artif\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65214}, goog:processID: 13084, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65214/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bd9b017cc9dc468e49ef2a2642f8cb7
+2026-11-20 21:59:56 - Added product [1] to cart: 'Defacto 100% Cotton Plaid Shirt' (509.0 EGP)
+2026-11-20 21:59:56 - Performing search for: 'Wireless Headphones'
+2026-11-20 22:00:29 - Clicking product at index: 1
+2026-11-20 22:00:43 - Navigating directly to verified product URL: https://www.jumia.com.eg/sodo-sodo-sd-1004-wireless-over-ear-headphone-black-47595463.html
+2026-11-20 22:01:08 - Waiting for element: By.cssSelector: span[data-price='true'], .-b.-ubpt, .prc.-fs24
+2026-11-20 22:01:08 - Retrieved text from By.cssSelector: span[data-price='true'], .-b.-ubpt, .prc.-fs24: 'EGP 338.00'
+2026-11-20 22:01:08 - Waiting for element: By.cssSelector: span[data-price='true'], .-b.-ubpt, .prc.-fs24
+2026-11-20 22:01:08 - Retrieved text from By.cssSelector: span[data-price='true'], .-b.-ubpt, .prc.-fs24: 'EGP 338.00'
+2026-11-20 22:01:08 - Waiting for element: By.xpath: //div[contains(., 'Seller Information') or contains(., 'معلومات البائع')]/following-sibling::div//p[contains(@class, '-m')] | //p[contains(@class, '-m -pbm')]
+2026-11-20 22:01:08 - Retrieved text from By.xpath: //div[contains(., 'Seller Information') or contains(., 'معلومات البائع')]/following-sibling::div//p[contains(@class, '-m')] | //p[contains(@class, '-m -pbm')]: 'X-Tech Consignment'
+2026-11-20 22:01:08 - Waiting for element: By.cssSelector: .stars._m, .-df.-i-ctr.-fs12 .stars, .rv-avg
+2026-11-20 22:01:08 - Retrieved text from By.cssSelector: .stars._m, .-df.-i-ctr.-fs12 .stars, .rv-avg: '4.1 out of 5'
+2026-11-20 22:01:08 - Captured PDP Details -> Title: 'SODO SODO Sd-1004 Wireless Over Ear Headphone - Black' | Price: 338.0 EGP | Seller: 'X-Tech Consignment' | Rating: 4.1
+2026-11-20 22:01:08 - Adding product to cart
+2026-11-20 22:01:22 - Add to Cart clicked via CSS selector
+2026-11-20 22:01:27 - Add-to-Cart popup not detected or already closed: Expected condition failed: waiting for element found by By.xpath: //button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')]"}.
+(tried for 5 seconds with 500 milliseconds interval)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\artif\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65214}, goog:processID: 13084, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65214/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bd9b017cc9dc468e49ef2a2642f8cb7
+2026-11-20 22:01:32 - Add-to-Cart popup not detected or already closed: Expected condition failed: waiting for element found by By.xpath: //button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')]"}.
+(tried for 5 seconds with 500 milliseconds interval)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\artif\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65214}, goog:processID: 13084, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65214/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bd9b017cc9dc468e49ef2a2642f8cb7
+2026-11-20 22:01:37 - Add-to-Cart popup not detected or already closed: Expected condition failed: waiting for element found by By.xpath: //button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')]"}.
+(tried for 5 seconds with 500 milliseconds interval)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\artif\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65214}, goog:processID: 13084, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65214/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bd9b017cc9dc468e49ef2a2642f8cb7
+2026-11-20 22:01:46 - Added product [2] to cart: 'SODO SODO Sd-1004 Wireless Over Ear Headphone - Black' (338.0 EGP)
+2026-11-20 22:01:46 - Performing search for: 'Wireless Headphones'
+2026-11-20 22:02:22 - Clicking product at index: 2
+2026-11-20 22:02:35 - Navigating directly to verified product URL: https://www.jumia.com.eg/sodo-sd-1101-wireless-headset-bluetooth-v5.3-with-external-microphone-and-support-sd-card-124551182.html
+2026-11-20 22:03:00 - Waiting for element: By.cssSelector: span[data-price='true'], .-b.-ubpt, .prc.-fs24
+2026-11-20 22:03:00 - Retrieved text from By.cssSelector: span[data-price='true'], .-b.-ubpt, .prc.-fs24: 'EGP 314.00'
+2026-11-20 22:03:00 - Waiting for element: By.cssSelector: span[data-price='true'], .-b.-ubpt, .prc.-fs24
+2026-11-20 22:03:00 - Retrieved text from By.cssSelector: span[data-price='true'], .-b.-ubpt, .prc.-fs24: 'EGP 314.00'
+2026-11-20 22:03:00 - Waiting for element: By.xpath: //div[contains(., 'Seller Information') or contains(., 'معلومات البائع')]/following-sibling::div//p[contains(@class, '-m')] | //p[contains(@class, '-m -pbm')]
+2026-11-20 22:03:00 - Retrieved text from By.xpath: //div[contains(., 'Seller Information') or contains(., 'معلومات البائع')]/following-sibling::div//p[contains(@class, '-m')] | //p[contains(@class, '-m -pbm')]: 'fashion.k'
+2026-11-20 22:03:00 - Waiting for element: By.cssSelector: .stars._m, .-df.-i-ctr.-fs12 .stars, .rv-avg
+2026-11-20 22:03:00 - Retrieved text from By.cssSelector: .stars._m, .-df.-i-ctr.-fs12 .stars, .rv-avg: '3.6 out of 5'
+2026-11-20 22:03:00 - Captured PDP Details -> Title: 'SODO SD 1101 Wireless Headset Bluetooth V5.3 With External Microphone And Support SD Card' | Price: 314.0 EGP | Seller: 'fashion.k' | Rating: 3.6
+2026-11-20 22:03:00 - Adding product to cart
+2026-11-20 22:03:13 - Add to Cart clicked via CSS selector
+2026-11-20 22:03:18 - Add-to-Cart popup not detected or already closed: Expected condition failed: waiting for element found by By.xpath: //button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')]"}.
+(tried for 5 seconds with 500 milliseconds interval)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\artif\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65214}, goog:processID: 13084, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65214/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bd9b017cc9dc468e49ef2a2642f8cb7
+2026-11-20 22:03:24 - Add-to-Cart popup not detected or already closed: Expected condition failed: waiting for element found by By.xpath: //button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')]"}.
+(tried for 5 seconds with 500 milliseconds interval)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\artif\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65214}, goog:processID: 13084, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65214/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bd9b017cc9dc468e49ef2a2642f8cb7
+2026-11-20 22:03:29 - Add-to-Cart popup not detected or already closed: Expected condition failed: waiting for element found by By.xpath: //button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')]"}.
+(tried for 5 seconds with 500 milliseconds interval)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\artif\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65214}, goog:processID: 13084, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65214/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bd9b017cc9dc468e49ef2a2642f8cb7
+2026-11-20 22:03:37 - Added product [3] to cart: 'SODO SD 1101 Wireless Headset Bluetooth V5.3 With External Microphone And Support SD Card' (314.0 EGP)
+2026-11-20 22:03:37 - Navigating to Cart
+2026-11-20 22:04:18 - Cart Item [1]: 'SODO SODO Sd-1004 Wireless Over Ear Headphone - Black' | Unit Price: 338.0 EGP | Qty: 1 | Subtotal: 338.0 EGP
+2026-11-20 22:04:24 - Cart Item [2]: 'SODO SD 1101 Wireless Headset Bluetooth V5.3 With External Microphone And Support SD Card' | Unit Price: 314.0 EGP | Qty: 1 | Subtotal: 314.0 EGP
+2026-11-20 22:04:34 - Cart Item [3]: '' | Unit Price: 0.0 EGP | Qty: 1 | Subtotal: 0.0 EGP
+2026-11-20 22:04:45 - Cart Item [4]: '' | Unit Price: 0.0 EGP | Qty: 1 | Subtotal: 0.0 EGP
+2026-11-20 22:04:55 - Cart Item [5]: '' | Unit Price: 0.0 EGP | Qty: 1 | Subtotal: 0.0 EGP
+2026-11-20 22:05:05 - Cart Item [6]: '' | Unit Price: 0.0 EGP | Qty: 1 | Subtotal: 0.0 EGP
+2026-11-20 22:05:15 - Cart Item [7]: '' | Unit Price: 0.0 EGP | Qty: 1 | Subtotal: 0.0 EGP
+2026-11-20 22:05:26 - Cart Item [8]: '' | Unit Price: 0.0 EGP | Qty: 1 | Subtotal: 0.0 EGP
+2026-11-20 22:05:26 - Cart loaded with 8 items
+2026-11-20 22:05:36 - Expected Total: 1161.0 EGP | Actual Total: 652.0 EGP
+2026-11-20 22:05:36 - Refreshing Cart page to test persistence
+2026-11-20 22:06:06 - Cart Item [1]: 'SODO SODO Sd-1004 Wireless Over Ear Headphone - Black' | Unit Price: 338.0 EGP | Qty: 1 | Subtotal: 338.0 EGP
+2026-11-20 22:06:11 - Cart Item [2]: 'SODO SD 1101 Wireless Headset Bluetooth V5.3 With External Microphone And Support SD Card' | Unit Price: 314.0 EGP | Qty: 1 | Subtotal: 314.0 EGP
+2026-11-20 22:06:21 - Cart Item [3]: '' | Unit Price: 0.0 EGP | Qty: 1 | Subtotal: 0.0 EGP
+2026-11-20 22:06:31 - Cart Item [4]: '' | Unit Price: 0.0 EGP | Qty: 1 | Subtotal: 0.0 EGP
+2026-11-20 22:06:42 - Cart Item [5]: '' | Unit Price: 0.0 EGP | Qty: 1 | Subtotal: 0.0 EGP
+2026-11-20 22:06:52 - Cart Item [6]: '' | Unit Price: 0.0 EGP | Qty: 1 | Subtotal: 0.0 EGP
+2026-11-20 22:07:03 - Cart Item [7]: '' | Unit Price: 0.0 EGP | Qty: 1 | Subtotal: 0.0 EGP
+2026-11-20 22:07:13 - Cart Item [8]: '' | Unit Price: 0.0 EGP | Qty: 1 | Subtotal: 0.0 EGP
+]]></system-out>
+    <system-err><![CDATA[Nov 20, 2026 9:58:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 156, returning the closest version; found: 152; Please update to a Selenium version that supports CDP version 156
+]]></system-err>
+  </testcase>
+  <testcase name="testCartQuantityAndPriceCalculation[Smart Watch, 1, 2, 3, 1](1)" classname="tests.Scenario3_CartQuantityPriceTest" time="376.011">
+    <failure message="The following asserts failed:&#10;	Subtotal mismatch for quantity 2 expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	Subtotal mismatch for quantity 2 expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.Scenario3_CartQuantityPriceTest.testCartQuantityAndPriceCalculation(Scenario3_CartQuantityPriceTest.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[2026-11-20 22:07:24 - Test FAILED: testProductComparisonThroughCart
+2026-11-20 22:07:24 - Taking screenshot for test: testProductComparisonThroughCart
+2026-11-20 22:07:24 - Screenshot saved: C:\Users\artif\Downloads\Autokit-master\screenshots\testProductComparisonThroughCart_20261120_220724.png
+2026-11-20 22:07:24 - Quitting WebDriver session
+2026-11-20 22:07:24 - Quitting WebDriver for thread: 1
+2026-11-20 22:07:25 - ================================================================================
+2026-11-20 22:07:25 - Loading Scenario 3 DDT data
+2026-11-20 22:07:25 - Loading JSON from [src/main/resources/file.json]
+2026-11-20 22:07:25 - Loaded 8 top-level keys from [src/main/resources/file.json]
+2026-11-20 22:07:25 - Map under key 'scenario3' has 4 entries
+2026-11-20 22:07:25 - ================================================================================
+2026-11-20 22:07:25 - Starting Test Execution on thread: 1
+2026-11-20 22:07:25 - Initializing WebDriver for browser: chrome | headless: false
+2026-11-20 22:07:27 - WebDriver created and registered to thread: 1
+2026-11-20 22:07:27 - Navigating to Base URL: https://www.jumia.com.eg/
+2026-11-20 22:07:29 - Starting Scenario 3: Quantity cycle [1 -> 2 -> 3 -> 1] for 'Smart Watch'
+2026-11-20 22:07:40 - Performing search for: 'Smart Watch'
+2026-11-20 22:07:56 - Applying direct catalog search URL fallback for: 'Smart Watch'
+2026-11-20 22:08:01 - Dismissing newsletter popup
+2026-11-20 22:08:02 - Accepting cookies banner
+2026-11-20 22:08:08 - Clicking product at index: 0
+2026-11-20 22:08:16 - Navigating directly to verified product URL: https://www.jumia.com.eg/philips-philips-kareoke-wireless-speaker-2-included-wirless-microphones-6-sound-effects-4-display-modes-15hrs-playtime-bt-usb-aux-tf-card-support-carry-strap-135137600.html
+2026-11-20 22:08:31 - Adding product to cart and proceeding to cart
+2026-11-20 22:08:31 - Adding product to cart
+2026-11-20 22:08:44 - Add to Cart clicked via CSS selector
+2026-11-20 22:08:49 - Add-to-Cart popup not detected or already closed: Expected condition failed: waiting for element found by By.xpath: //button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')]"}.
+(tried for 5 seconds with 500 milliseconds interval)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\artif\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57051}, goog:processID: 24160, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57051/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d76d127d6f3da1da8cca586365369889
+2026-11-20 22:08:54 - Add-to-Cart popup not detected or already closed: Expected condition failed: waiting for element found by By.xpath: //button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')]"}.
+(tried for 5 seconds with 500 milliseconds interval)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\artif\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57051}, goog:processID: 24160, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57051/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d76d127d6f3da1da8cca586365369889
+2026-11-20 22:08:59 - Add-to-Cart popup not detected or already closed: Expected condition failed: waiting for element found by By.xpath: //button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')]"}.
+(tried for 5 seconds with 500 milliseconds interval)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\artif\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57051}, goog:processID: 24160, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57051/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d76d127d6f3da1da8cca586365369889
+2026-11-20 22:09:43 - Cart Item [1]: 'Philips Philips Kareoke wireless speaker, 2 included wirless microphones, 6 sound effects, 4 display modes, 15hrs playtime, BT, USB, AUX, TF card support, Carry Strap' | Unit Price: 4999.0 EGP | Qty: 1 | Subtotal: 4999.0 EGP
+2026-11-20 22:09:53 - Cart Item [2]: 'Anker soundcore Boom Go 3i Black' | Unit Price: 4111.0 EGP | Qty: 1 | Subtotal: 4111.0 EGP
+2026-11-20 22:10:03 - Cart Item [3]: 'Bosch Bosch LBC3080/01 Metal Fire Dome for Ceiling Speakers – Red' | Unit Price: 1250.0 EGP | Qty: 1 | Subtotal: 1250.0 EGP
+2026-11-20 22:10:14 - Cart Item [4]: 'Jbl Go5 Bluetooth Speaker' | Unit Price: 3999.0 EGP | Qty: 1 | Subtotal: 3999.0 EGP
+2026-11-20 22:10:24 - Cart Item [5]: 'RGB Table Lamp with Wireless Speaker AN-2301 in White, Perfect for Work & Entertainment with Customizable Lighting & Integrated Audio Playback' | Unit Price: 430.0 EGP | Qty: 1 | Subtotal: 430.0 EGP
+2026-11-20 22:10:34 - Cart Item [6]: 'SNZOU SN-30 Portable Speaker 230W, 7 Colors Ambiance Lights (Black)' | Unit Price: 14795.0 EGP | Qty: 1 | Subtotal: 14795.0 EGP
+2026-11-20 22:10:44 - Cart Item [7]: 'Jbl JBL Party light stick' | Unit Price: 7111.0 EGP | Qty: 1 | Subtotal: 7111.0 EGP
+2026-11-20 22:10:54 - Cart Item [8]: 'Wesdar Mini Multimedia Speaker with Powerful Stereo Sound and 3D Audio Effect' | Unit Price: 426.0 EGP | Qty: 1 | Subtotal: 426.0 EGP
+2026-11-20 22:11:04 - Cart Item [9]: 'Marshall StanMore III Bluetooth Speaker / Black' | Unit Price: 27990.0 EGP | Qty: 1 | Subtotal: 27990.0 EGP
+2026-11-20 22:11:04 - Recorded Unit Price: 4999.0 EGP
+2026-11-20 22:11:04 - Updating item [0] quantity to 2
+2026-11-20 22:12:20 - Qty: 2 | Expected Subtotal: 9998.0 | Actual Total: 4999.0
+2026-11-20 22:12:20 - Updating item [0] quantity to 3
+2026-11-20 22:12:59 - Qty: 3 | Expected Subtotal: 14997.0 | Actual Total: 14997.0
+2026-11-20 22:12:59 - Updating item [0] quantity to 1
+2026-11-20 22:13:45 - Decreased to 1 | Final Total: 4999.0 (Expected approx: 4999.0)
+]]></system-out>
+    <system-err><![CDATA[Nov 20, 2026 10:07:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 156, returning the closest version; found: 152; Please update to a Selenium version that supports CDP version 156
+]]></system-err>
+  </testcase>
+  <testcase name="testMixedCartOperations[[Ljava.lang.String;@23307c6c, 2, Headphones](1)" classname="tests.Scenario4_MixedCartOperationsTest" time="155.932">
+    <failure message="No product matching keyword &apos;Headphones&apos; found&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception&#10;Build info: version: &apos;4.48.0&apos;, revision: &apos;27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.13&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+No product matching keyword 'Headphones' found
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: driver.version: unknown
+	at pages.SearchResultsPage.clickProductByTitleKeyword(SearchResultsPage.java:299)
+	at tests.Scenario4_MixedCartOperationsTest.testMixedCartOperations(Scenario4_MixedCartOperationsTest.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[2026-11-20 22:13:45 - Test FAILED: testCartQuantityAndPriceCalculation
+2026-11-20 22:13:45 - Taking screenshot for test: testCartQuantityAndPriceCalculation
+2026-11-20 22:13:46 - Screenshot saved: C:\Users\artif\Downloads\Autokit-master\screenshots\testCartQuantityAndPriceCalculation_20261120_221345.png
+2026-11-20 22:13:46 - Quitting WebDriver session
+2026-11-20 22:13:46 - Quitting WebDriver for thread: 1
+2026-11-20 22:13:46 - ================================================================================
+2026-11-20 22:13:46 - Loading Scenario 4 DDT data
+2026-11-20 22:13:46 - Loading JSON from [src/main/resources/file.json]
+2026-11-20 22:13:46 - Loaded 8 top-level keys from [src/main/resources/file.json]
+2026-11-20 22:13:46 - Map under key 'scenario4' has 3 entries
+2026-11-20 22:13:46 - ================================================================================
+2026-11-20 22:13:46 - Starting Test Execution on thread: 1
+2026-11-20 22:13:46 - Initializing WebDriver for browser: chrome | headless: false
+2026-11-20 22:13:48 - WebDriver created and registered to thread: 1
+2026-11-20 22:13:48 - Navigating to Base URL: https://www.jumia.com.eg/
+2026-11-20 22:13:49 - Starting Scenario 4: Mixed Cart Operations with [Mobile Phone, Headphones, Power Bank]
+2026-11-20 22:14:00 - Performing search for: 'Mobile Phone'
+2026-11-20 22:14:16 - Applying direct catalog search URL fallback for: 'Mobile Phone'
+2026-11-20 22:14:21 - Dismissing newsletter popup
+2026-11-20 22:14:21 - Accepting cookies banner
+2026-11-20 22:14:28 - Clicking product with keyword: Mobile Phone
+2026-11-20 22:14:54 - Adding product to cart
+2026-11-20 22:15:15 - Could not scroll to element: By.cssSelector: form#add-to-cart button.add, button.add.btn._prim, button[name='action'][value='in'], button.-mhm.-pvs.-fs16.-btn.add, button[data-action='add'], button.btn._prim[data-action], .-phs.-pvs button.add, section.-df.-j-end button, button[data-gtm-label='add_to_cart'], button[aria-label*='Add to cart'], button[aria-label*='add to cart']
+2026-11-20 22:15:26 - CSS Add to Cart failed: Expected condition failed: waiting for element found by By.cssSelector: form#add-to-cart button.add, button.add.btn._prim, button[name='action'][value='in'], button.-mhm.-pvs.-fs16.-btn.add, button[data-action='add'], button.btn._prim[data-action], .-phs.-pvs button.add, section.-df.-j-end button, button[data-gtm-label='add_to_cart'], button[aria-label*='Add to cart'], button[aria-label*='add to cart'] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"form#add-to-cart button.add, button.add.btn._prim, button[name='action'][value='in'], button.-mhm.-pvs.-fs16.-btn.add, button[data-action='add'], button.btn._prim[data-action], .-phs.-pvs button.add, section.-df.-j-end button, button[data-gtm-label='add_to_cart'], button[aria-label*='Add to cart'], button[aria-label*='add to cart']"}.
+(tried for 8 seconds with 500 milliseconds interval)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\artif\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62920}, goog:processID: 16176, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62920/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7c466ba668e9016bd19db2dea2560016
+2026-11-20 22:15:31 - Could not click Add to Cart - product may already be in cart or page structure changed
+2026-11-20 22:15:31 - Added 'Mobile Phone' to cart
+2026-11-20 22:15:31 - Performing search for: 'Headphones'
+2026-11-20 22:15:46 - Applying direct catalog search URL fallback for: 'Headphones'
+2026-11-20 22:16:13 - Clicking product with keyword: Headphones
+]]></system-out>
+    <system-err><![CDATA[Nov 20, 2026 10:13:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 156, returning the closest version; found: 152; Please update to a Selenium version that supports CDP version 156
+]]></system-err>
+  </testcase>
+  <testcase name="testGuestCheckoutValidation[Power Bank, test.guest.jumia@gmail.com](1)" classname="tests.Scenario5_GuestCheckoutTest" time="353.217">
+    <system-out><![CDATA[2026-11-20 22:16:25 - Test FAILED: testMixedCartOperations
+2026-11-20 22:16:25 - Taking screenshot for test: testMixedCartOperations
+2026-11-20 22:16:26 - Screenshot saved: C:\Users\artif\Downloads\Autokit-master\screenshots\testMixedCartOperations_20261120_221626.png
+2026-11-20 22:16:26 - Quitting WebDriver session
+2026-11-20 22:16:26 - Quitting WebDriver for thread: 1
+2026-11-20 22:16:26 - ================================================================================
+2026-11-20 22:16:26 - Loading Scenario 5 DDT data
+2026-11-20 22:16:26 - Loading JSON from [src/main/resources/file.json]
+2026-11-20 22:16:26 - Loaded 8 top-level keys from [src/main/resources/file.json]
+2026-11-20 22:16:26 - Map under key 'scenario5' has 2 entries
+2026-11-20 22:16:26 - ================================================================================
+2026-11-20 22:16:26 - Starting Test Execution on thread: 1
+2026-11-20 22:16:26 - Initializing WebDriver for browser: chrome | headless: false
+2026-11-20 22:16:27 - WebDriver created and registered to thread: 1
+2026-11-20 22:16:27 - Navigating to Base URL: https://www.jumia.com.eg/
+2026-11-20 22:16:29 - Starting Scenario 5: Guest checkout flow with 'Power Bank'
+2026-11-20 22:16:40 - Performing search for: 'Power Bank'
+2026-11-20 22:16:55 - Applying direct catalog search URL fallback for: 'Power Bank'
+2026-11-20 22:16:59 - Dismissing newsletter popup
+2026-11-20 22:17:00 - Accepting cookies banner
+2026-11-20 22:17:07 - Clicking product at index: 0
+2026-11-20 22:17:14 - Navigating directly to verified product URL: https://www.jumia.com.eg/philips-philips-kareoke-wireless-speaker-2-included-wirless-microphones-6-sound-effects-4-display-modes-15hrs-playtime-bt-usb-aux-tf-card-support-carry-strap-135137600.html
+2026-11-20 22:17:28 - Adding product to cart and proceeding to cart
+2026-11-20 22:17:28 - Adding product to cart
+2026-11-20 22:17:42 - Add to Cart clicked via CSS selector
+2026-11-20 22:17:47 - Add-to-Cart popup not detected or already closed: Expected condition failed: waiting for element found by By.xpath: //button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')]"}.
+(tried for 5 seconds with 500 milliseconds interval)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\artif\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65415}, goog:processID: 20744, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65415/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5539f45db0a0e583e3e660d4ed2dfcd9
+2026-11-20 22:17:52 - Add-to-Cart popup not detected or already closed: Expected condition failed: waiting for element found by By.xpath: //button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')]"}.
+(tried for 5 seconds with 500 milliseconds interval)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\artif\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65415}, goog:processID: 20744, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65415/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5539f45db0a0e583e3e660d4ed2dfcd9
+2026-11-20 22:17:57 - Add-to-Cart popup not detected or already closed: Expected condition failed: waiting for element found by By.xpath: //button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(@aria-label, 'close') or contains(text(), 'Close') or contains(text(), 'Continue shopping')]"}.
+(tried for 5 seconds with 500 milliseconds interval)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\artif\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65415}, goog:processID: 20744, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65415/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5539f45db0a0e583e3e660d4ed2dfcd9
+2026-11-20 22:18:41 - Cart Item [1]: 'Philips Philips Kareoke wireless speaker, 2 included wirless microphones, 6 sound effects, 4 display modes, 15hrs playtime, BT, USB, AUX, TF card support, Carry Strap' | Unit Price: 4999.0 EGP | Qty: 1 | Subtotal: 4999.0 EGP
+2026-11-20 22:18:51 - Cart Item [2]: 'Anker soundcore Boom Go 3i Black' | Unit Price: 4111.0 EGP | Qty: 1 | Subtotal: 4111.0 EGP
+2026-11-20 22:19:01 - Cart Item [3]: 'Bosch Bosch LBC3080/01 Metal Fire Dome for Ceiling Speakers – Red' | Unit Price: 1250.0 EGP | Qty: 1 | Subtotal: 1250.0 EGP
+2026-11-20 22:19:11 - Cart Item [4]: 'Jbl Go5 Bluetooth Speaker' | Unit Price: 3999.0 EGP | Qty: 1 | Subtotal: 3999.0 EGP
+2026-11-20 22:19:22 - Cart Item [5]: 'RGB Table Lamp with Wireless Speaker AN-2301 in White, Perfect for Work & Entertainment with Customizable Lighting & Integrated Audio Playback' | Unit Price: 430.0 EGP | Qty: 1 | Subtotal: 430.0 EGP
+2026-11-20 22:19:32 - Cart Item [6]: 'SNZOU SN-30 Portable Speaker 230W, 7 Colors Ambiance Lights (Black)' | Unit Price: 14795.0 EGP | Qty: 1 | Subtotal: 14795.0 EGP
+2026-11-20 22:19:42 - Cart Item [7]: 'Jbl JBL Party light stick' | Unit Price: 7111.0 EGP | Qty: 1 | Subtotal: 7111.0 EGP
+2026-11-20 22:19:52 - Cart Item [8]: 'Wesdar Mini Multimedia Speaker with Powerful Stereo Sound and 3D Audio Effect' | Unit Price: 426.0 EGP | Qty: 1 | Subtotal: 426.0 EGP
+2026-11-20 22:20:03 - Cart Item [9]: 'Marshall StanMore III Bluetooth Speaker / Black' | Unit Price: 27990.0 EGP | Qty: 1 | Subtotal: 27990.0 EGP
+2026-11-20 22:20:13 - Proceeding to checkout
+2026-11-20 22:20:24 - Clicking on element: By.cssSelector: a[href*='/checkout'], button[name='checkout'], a.btn._prim._md[href*='checkout']
+2026-11-20 22:20:53 - Guest checkout login prompt check: URL matches=true, Input visible=true
+2026-11-20 22:20:53 - Login prompt shown on checkout: true
+2026-11-20 22:20:53 - Entering identification email: test.guest.jumia@gmail.com
+2026-11-20 22:20:53 - Waiting for element: By.cssSelector: input.mdc-text-field__input, input[name='email'], input#input_identifier_value, input[type='email'], input[name='identification'], form input[type='text'], input
+2026-11-20 22:21:03 - Element not visible within 10 seconds: By.cssSelector: input.mdc-text-field__input, input[name='email'], input#input_identifier_value, input[type='email'], input[name='identification'], form input[type='text'], input
+2026-11-20 22:21:03 - Standard type failed, trying JS fallback: Expected condition failed: waiting for visibility of element found by By.cssSelector: input.mdc-text-field__input, input[name='email'], input#input_identifier_value, input[type='email'], input[name='identification'], form input[type='text'], input
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: '4.48.0', revision: '27f5213 27f5213055e28398a5105b7892b7a3bb2012a6ef'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 156.0.8078.80, chrome: {chromedriverVersion: 156.0.8078.80 (fb096c0011f9..., userDataDir: C:\Users\artif\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65415}, goog:processID: 20744, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65415/devtoo..., se:cdpVersion: 156.0.8078.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5539f45db0a0e583e3e660d4ed2dfcd9
+2026-11-20 22:21:03 - Navigating back to Cart
+2026-11-20 22:21:40 - Cart Item [1]: 'Philips Philips Kareoke wireless speaker, 2 included wirless microphones, 6 sound effects, 4 display modes, 15hrs playtime, BT, USB, AUX, TF card support, Carry Strap' | Unit Price: 4999.0 EGP | Qty: 1 | Subtotal: 4999.0 EGP
+2026-11-20 22:22:22 - Cart Item [1]: 'Philips Philips Kareoke wireless speaker, 2 included wirless microphones, 6 sound effects, 4 display modes, 15hrs playtime, BT, USB, AUX, TF card support, Carry Strap' | Unit Price: 4999.0 EGP | Qty: 1 | Subtotal: 4999.0 EGP
+2026-11-20 22:22:22 - Returned to cart. Pre total: 4999.0 | Post total: 4999.0
+2026-11-20 22:22:22 - Scenario 5 completed successfully
+]]></system-out>
+    <system-err><![CDATA[Nov 20, 2026 10:16:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 156, returning the closest version; found: 152; Please update to a Selenium version that supports CDP version 156
+]]></system-err>
+  </testcase>
+  <testcase name="testSearchFunctionalityInputs[Valid, Samsung, ResultsFound](1)" classname="tests.Scenario6_SearchInputsTest" time="42.248">
+    <system-out><![CDATA[2026-11-20 22:22:22 - Test PASSED: testGuestCheckoutValidation
+2026-11-20 22:22:22 - Quitting WebDriver session
+2026-11-20 22:22:22 - Quitting WebDriver for thread: 1
+2026-11-20 22:22:25 - ================================================================================
+2026-11-20 22:22:25 - Loading Scenario 6 DDT data from CSV
+2026-11-20 22:22:25 - Reading test data from [src/main/resources/file.csv]
+2026-11-20 22:22:25 - Loaded 6 rows and 3 columns from [src/main/resources/file.csv]
+2026-11-20 22:22:25 - Returning 6 rows from [src/main/resources/file.csv]
+2026-11-20 22:22:25 - ================================================================================
+2026-11-20 22:22:25 - Starting Test Execution on thread: 1
+2026-11-20 22:22:25 - Initializing WebDriver for browser: chrome | headless: false
+2026-11-20 22:22:27 - WebDriver created and registered to thread: 1
+2026-11-20 22:22:27 - Navigating to Base URL: https://www.jumia.com.eg/
+2026-11-20 22:22:31 - Starting Scenario 6 [Valid]: Query 'Samsung' (Expected: ResultsFound)
+2026-11-20 22:22:41 - Performing search for: 'Samsung'
+2026-11-20 22:22:57 - Applying direct catalog search URL fallback for: 'Samsung'
+2026-11-20 22:23:03 - Dismissing newsletter popup
+2026-11-20 22:23:05 - Accepting cookies banner
+2026-11-20 22:23:13 - Current URL: https://www.jumia.com.eg/catalog/?q=Samsung
+2026-11-20 22:23:13 - Search Box Value: 'samsung'
+2026-11-20 22:23:13 - Scenario 6 [Valid] completed successfully
+]]></system-out>
+    <system-err><![CDATA[Nov 20, 2026 10:22:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 156, returning the closest version; found: 152; Please update to a Selenium version that supports CDP version 156
+]]></system-err>
+  </testcase>
+  <testcase name="testSearchFunctionalityInputs[Partial, Sam, ResultsFound](2)" classname="tests.Scenario6_SearchInputsTest" time="43.738">
+    <system-out><![CDATA[2026-11-20 22:23:13 - Test PASSED: testSearchFunctionalityInputs
+2026-11-20 22:23:13 - Quitting WebDriver session
+2026-11-20 22:23:13 - Quitting WebDriver for thread: 1
+2026-11-20 22:23:14 - ================================================================================
+2026-11-20 22:23:14 - ================================================================================
+2026-11-20 22:23:14 - Starting Test Execution on thread: 1
+2026-11-20 22:23:14 - Initializing WebDriver for browser: chrome | headless: false
+2026-11-20 22:23:17 - WebDriver created and registered to thread: 1
+2026-11-20 22:23:17 - Navigating to Base URL: https://www.jumia.com.eg/
+2026-11-20 22:23:19 - Starting Scenario 6 [Partial]: Query 'Sam' (Expected: ResultsFound)
+2026-11-20 22:23:31 - Performing search for: 'Sam'
+2026-11-20 22:23:47 - Applying direct catalog search URL fallback for: 'Sam'
+2026-11-20 22:23:56 - Dismissing newsletter popup
+2026-11-20 22:23:56 - Accepting cookies banner
+2026-11-20 22:24:03 - Current URL: https://www.jumia.com.eg/catalog/?q=Sam
+2026-11-20 22:24:03 - Search Box Value: 'sam'
+2026-11-20 22:24:03 - Scenario 6 [Partial] completed successfully
+]]></system-out>
+    <system-err><![CDATA[Nov 20, 2026 10:23:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 156, returning the closest version; found: 152; Please update to a Selenium version that supports CDP version 156
+]]></system-err>
+  </testcase>
+  <testcase name="testSearchFunctionalityInputs[Numbers, 12345678, NoCrash](3)" classname="tests.Scenario6_SearchInputsTest" time="46.504">
+    <system-out><![CDATA[2026-11-20 22:24:03 - Test PASSED: testSearchFunctionalityInputs
+2026-11-20 22:24:03 - Quitting WebDriver session
+2026-11-20 22:24:03 - Quitting WebDriver for thread: 1
+2026-11-20 22:24:04 - ================================================================================
+2026-11-20 22:24:04 - ================================================================================
+2026-11-20 22:24:04 - Starting Test Execution on thread: 1
+2026-11-20 22:24:04 - Initializing WebDriver for browser: chrome | headless: false
+2026-11-20 22:24:06 - WebDriver created and registered to thread: 1
+2026-11-20 22:24:06 - Navigating to Base URL: https://www.jumia.com.eg/
+2026-11-20 22:24:09 - Starting Scenario 6 [Numbers]: Query '12345678' (Expected: NoCrash)
+2026-11-20 22:24:21 - Performing search for: '12345678'
+2026-11-20 22:24:36 - Applying direct catalog search URL fallback for: '12345678'
+2026-11-20 22:24:46 - Dismissing newsletter popup
+2026-11-20 22:24:48 - Accepting cookies banner
+2026-11-20 22:24:55 - Current URL: https://www.jumia.com.eg/catalog/?q=12345678
+2026-11-20 22:24:55 - Search Box Value: '12345678'
+2026-11-20 22:24:55 - Scenario 6 [Numbers] completed successfully
+]]></system-out>
+    <system-err><![CDATA[Nov 20, 2026 10:24:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 156, returning the closest version; found: 152; Please update to a Selenium version that supports CDP version 156
+]]></system-err>
+  </testcase>
+  <testcase name="testSearchFunctionalityInputs[SpecialChar, @#$%^&amp;*, NoCrash](4)" classname="tests.Scenario6_SearchInputsTest" time="39.48">
+    <system-out><![CDATA[2026-11-20 22:24:56 - Test PASSED: testSearchFunctionalityInputs
+2026-11-20 22:24:56 - Quitting WebDriver session
+2026-11-20 22:24:56 - Quitting WebDriver for thread: 1
+2026-11-20 22:24:57 - ================================================================================
+2026-11-20 22:24:57 - ================================================================================
+2026-11-20 22:24:57 - Starting Test Execution on thread: 1
+2026-11-20 22:24:57 - Initializing WebDriver for browser: chrome | headless: false
+2026-11-20 22:24:59 - WebDriver created and registered to thread: 1
+2026-11-20 22:24:59 - Navigating to Base URL: https://www.jumia.com.eg/
+2026-11-20 22:25:02 - Starting Scenario 6 [SpecialChar]: Query '@#$%^&*' (Expected: NoCrash)
+2026-11-20 22:25:13 - Performing search for: '@#$%^&*'
+2026-11-20 22:25:29 - Applying direct catalog search URL fallback for: '@#$%^&*'
+2026-11-20 22:25:34 - Dismissing newsletter popup
+2026-11-20 22:25:34 - Accepting cookies banner
+2026-11-20 22:25:42 - Current URL: https://www.jumia.com.eg/catalog/?q=%40%23%24%25%5E%26*
+2026-11-20 22:25:42 - Search Box Value: '@#$%^&*'
+2026-11-20 22:25:42 - Scenario 6 [SpecialChar] completed successfully
+]]></system-out>
+    <system-err><![CDATA[Nov 20, 2026 10:24:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 156, returning the closest version; found: 152; Please update to a Selenium version that supports CDP version 156
+]]></system-err>
+  </testcase>
+  <testcase name="testSearchFunctionalityInputs[Arabic, سامسونج, ResultsFound](5)" classname="tests.Scenario6_SearchInputsTest" time="44.635">
+    <system-out><![CDATA[2026-11-20 22:25:42 - Test PASSED: testSearchFunctionalityInputs
+2026-11-20 22:25:42 - Quitting WebDriver session
+2026-11-20 22:25:42 - Quitting WebDriver for thread: 1
+2026-11-20 22:25:43 - ================================================================================
+2026-11-20 22:25:43 - ================================================================================
+2026-11-20 22:25:43 - Starting Test Execution on thread: 1
+2026-11-20 22:25:43 - Initializing WebDriver for browser: chrome | headless: false
+2026-11-20 22:25:48 - WebDriver created and registered to thread: 1
+2026-11-20 22:25:48 - Navigating to Base URL: https://www.jumia.com.eg/
+2026-11-20 22:25:51 - Starting Scenario 6 [Arabic]: Query 'سامسونج' (Expected: ResultsFound)
+2026-11-20 22:26:02 - Performing search for: 'سامسونج'
+2026-11-20 22:26:17 - Applying direct catalog search URL fallback for: 'سامسونج'
+2026-11-20 22:26:26 - Dismissing newsletter popup
+2026-11-20 22:26:28 - Accepting cookies banner
+2026-11-20 22:26:35 - Current URL: https://www.jumia.com.eg/catalog/?q=%D8%B3%D8%A7%D9%85%D8%B3%D9%88%D9%86%D8%AC
+2026-11-20 22:26:35 - Search Box Value: 'سامسونج'
+2026-11-20 22:26:35 - Scenario 6 [Arabic] completed successfully
+]]></system-out>
+    <system-err><![CDATA[Nov 20, 2026 10:25:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 156, returning the closest version; found: 152; Please update to a Selenium version that supports CDP version 156
+]]></system-err>
+  </testcase>
+  <testcase name="testSearchFunctionalityInputs[Mixed, Samsung 2026 هاتف, Processed](6)" classname="tests.Scenario6_SearchInputsTest" time="40.968">
+    <system-out><![CDATA[2026-11-20 22:26:35 - Test PASSED: testSearchFunctionalityInputs
+2026-11-20 22:26:35 - Quitting WebDriver session
+2026-11-20 22:26:35 - Quitting WebDriver for thread: 1
+2026-11-20 22:26:36 - ================================================================================
+2026-11-20 22:26:36 - ================================================================================
+2026-11-20 22:26:36 - Starting Test Execution on thread: 1
+2026-11-20 22:26:36 - Initializing WebDriver for browser: chrome | headless: false
+2026-11-20 22:26:39 - WebDriver created and registered to thread: 1
+2026-11-20 22:26:39 - Navigating to Base URL: https://www.jumia.com.eg/
+2026-11-20 22:26:43 - Starting Scenario 6 [Mixed]: Query 'Samsung 2026 هاتف' (Expected: Processed)
+2026-11-20 22:26:54 - Performing search for: 'Samsung 2026 هاتف'
+2026-11-20 22:27:10 - Applying direct catalog search URL fallback for: 'Samsung 2026 هاتف'
+2026-11-20 22:27:15 - Dismissing newsletter popup
+2026-11-20 22:27:18 - Accepting cookies banner
+2026-11-20 22:27:24 - Current URL: https://www.jumia.com.eg/catalog/?q=Samsung+2026+%D9%87%D8%A7%D8%AA%D9%81
+2026-11-20 22:27:24 - Search Box Value: 'samsung 2026 هاتف'
+2026-11-20 22:27:24 - Scenario 6 [Mixed] completed successfully
+]]></system-out>
+    <system-err><![CDATA[Nov 20, 2026 10:26:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 156, returning the closest version; found: 152; Please update to a Selenium version that supports CDP version 156
+]]></system-err>
+  </testcase>
+  <testcase name="testGuestWishlistValidation[[Ljava.lang.String;@5c3b3f04](1)" classname="tests.Scenario7_WishlistGuestTest" time="222.846">
+    <system-out><![CDATA[2026-11-20 22:27:24 - Test PASSED: testSearchFunctionalityInputs
+2026-11-20 22:27:24 - Quitting WebDriver session
+2026-11-20 22:27:24 - Quitting WebDriver for thread: 1
+2026-11-20 22:27:25 - ================================================================================
+2026-11-20 22:27:25 - ================================================================================
+2026-11-20 22:27:25 - Starting Test Execution on thread: 1
+2026-11-20 22:27:25 - Initializing WebDriver for browser: chrome | headless: false
+2026-11-20 22:27:27 - WebDriver created and registered to thread: 1
+2026-11-20 22:27:27 - Navigating to Base URL: https://www.jumia.com.eg/
+2026-11-20 22:27:29 - Starting Scenario 7: Wishlist guest validation for 2 products
+2026-11-20 22:27:41 - Product [1]: Searching for 'Shoes'
+2026-11-20 22:27:41 - Performing search for: 'Shoes'
+2026-11-20 22:27:57 - Applying direct catalog search URL fallback for: 'Shoes'
+2026-11-20 22:28:04 - Dismissing newsletter popup
+2026-11-20 22:28:05 - Accepting cookies banner
+2026-11-20 22:28:12 - Clicking product at index: 0
+2026-11-20 22:28:21 - Navigating directly to verified product URL: https://www.jumia.com.eg/lc-waikiki-779-regular-fit-mens-jeans-135238126.html
+2026-11-20 22:28:35 - Product opened: 'LC Waikiki 779 Regular Fit Men's Jeans'
+2026-11-20 22:28:35 - Clicking Add to Wishlist
+2026-11-20 22:28:46 - Clicking on element: By.cssSelector: a#wishlist, a[data-track-onclick='wishlist'], a._wslt, button[data-track-onclick='wishlist'], button[aria-label*='wishlist'], button[aria-label*='Wishlist'], button[aria-label*='المفضلة'], form[action*='wishlist'] button, button.-wslt, .-wslt, svg[data-icon='heart']
+2026-11-20 22:28:51 - Wishlist guest verification: URL matches=true, Modal/Input visible=true, URL=https://my.jumia.com.eg/interaction/dRSx0oEO6sOSMGBk3r8ceBIySihOz_uu-btuSgTEjMW/en-eg/identification
+2026-11-20 22:28:51 - Guest wishlist login prompt displayed: true
+2026-11-20 22:29:29 - Product [2]: Searching for 'Watch'
+2026-11-20 22:29:29 - Performing search for: 'Watch'
+2026-11-20 22:30:05 - Clicking product at index: 0
+2026-11-20 22:30:18 - Navigating directly to verified product URL: https://www.jumia.com.eg/philips-philips-kareoke-wireless-speaker-2-included-wirless-microphones-6-sound-effects-4-display-modes-15hrs-playtime-bt-usb-aux-tf-card-support-carry-strap-135137600.html
+2026-11-20 22:30:34 - Product opened: 'Philips Philips Kareoke wireless speaker, 2 included wirless microphones, 6 sound effects, 4 display modes, 15hrs playtime, BT, USB, AUX, TF card support, Carry Strap'
+2026-11-20 22:30:34 - Clicking Add to Wishlist
+2026-11-20 22:30:45 - Clicking on element: By.cssSelector: a#wishlist, a[data-track-onclick='wishlist'], a._wslt, button[data-track-onclick='wishlist'], button[aria-label*='wishlist'], button[aria-label*='Wishlist'], button[aria-label*='المفضلة'], form[action*='wishlist'] button, button.-wslt, .-wslt, svg[data-icon='heart']
+2026-11-20 22:30:54 - Wishlist guest verification: URL matches=true, Modal/Input visible=false, URL=https://www.jumia.com.eg/customer/account/login/?tkWl=PH662EA1NXRWHNAFAMZ&return=%2Fphilips-philips-kareoke-wireless-speaker-2-included-wirless-microphones-6-sound-effects-4-display-modes-15hrs-playtime-bt-usb-aux-tf-card-support-carry-strap-135137600.html
+2026-11-20 22:30:54 - Guest wishlist login prompt displayed: true
+2026-11-20 22:31:12 - Scenario 7 completed successfully
+]]></system-out>
+    <system-err><![CDATA[Nov 20, 2026 10:27:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 156, returning the closest version; found: 152; Please update to a Selenium version that supports CDP version 156
+]]></system-err>
+  </testcase>
+  <testcase name="testPaginationAndProductConsistency[Laptop, [I@2ea55742](1)" classname="tests.Scenario8_PaginationConsistencyTest" time="138.793">
+    <system-out><![CDATA[2026-11-20 22:31:12 - Test PASSED: testGuestWishlistValidation
+2026-11-20 22:31:12 - Quitting WebDriver session
+2026-11-20 22:31:12 - Quitting WebDriver for thread: 1
+2026-11-20 22:31:13 - ================================================================================
+2026-11-20 22:31:13 - ================================================================================
+2026-11-20 22:31:13 - Starting Test Execution on thread: 1
+2026-11-20 22:31:13 - Initializing WebDriver for browser: chrome | headless: false
+2026-11-20 22:31:14 - WebDriver created and registered to thread: 1
+2026-11-20 22:31:14 - Navigating to Base URL: https://www.jumia.com.eg/
+2026-11-20 22:31:16 - Starting Scenario 8: Pagination consistency for 'Laptop' across pages [1, 2, 3]
+2026-11-20 22:31:27 - Performing search for: 'Laptop'
+2026-11-20 22:31:42 - Applying direct catalog search URL fallback for: 'Laptop'
+2026-11-20 22:31:48 - Dismissing newsletter popup
+2026-11-20 22:31:49 - Accepting cookies banner
+2026-11-20 22:31:55 - Stored Page 1 first product: 'ZG Notebook D1 Dual Screen Laptop Intel Core i7 9750H 16 Inches - 512GB/16GB - Keyboard Language Arabic & English - Windows 11 , zgOS' (60000.0 EGP)
+2026-11-20 22:31:55 - Navigating to catalog page: 2
+2026-11-20 22:32:14 - Navigating to catalog page: 3
+2026-11-20 22:32:39 - Navigating to catalog page: 1
+2026-11-20 22:33:08 - Page 1 first product upon return: 'ZG Notebook D1 Dual Screen Laptop Intel Core i7 9750H 16 Inches - 512GB/16GB - Keyboard Language Arabic & English - Windows 11 , zgOS' (60000.0 EGP)
+2026-11-20 22:33:08 - Clicking product at index: 0
+2026-11-20 22:33:21 - Navigating directly to verified product URL: https://www.jumia.com.eg/zg-notebook-d1-dual-screen-laptop-intel-core-i7-9750h-16-inches-512gb16gb-keyboard-language-arabic-english-windows-11-zgos-135355875.html
+2026-11-20 22:33:35 - Waiting for element: By.cssSelector: span[data-price='true'], .-b.-ubpt, .prc.-fs24
+2026-11-20 22:33:35 - Retrieved text from By.cssSelector: span[data-price='true'], .-b.-ubpt, .prc.-fs24: 'EGP 60,000.00'
+2026-11-20 22:33:35 - PDP Loaded: 'ZG Notebook D1 Dual Screen Laptop Intel Core i7 9750H 16 Inches - 512GB/16GB - Keyboard Language Arabic & English - Windows 11 , zgOS' | Price: 60000.0 EGP
+2026-11-20 22:33:35 - Scenario 8 completed successfully
+]]></system-out>
+    <system-err><![CDATA[Nov 20, 2026 10:31:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 156, returning the closest version; found: 152; Please update to a Selenium version that supports CDP version 156
+]]></system-err>
+  </testcase>
+</testsuite>
